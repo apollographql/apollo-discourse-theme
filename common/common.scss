@@ -1,0 +1,41 @@
+@import "colors";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body {
+    background-color: $regolith;
+
+    font-family: "Inter", sans-serif;
+
+}
+
+.d-header {
+    background-color: $nebula;
+}
+
+.sidebar-wrapper,
+.sidebar-container,
+.sidebar-footer-wrapper {
+    background-color: $nebula;
+}
+
+.list-controls .combo-box .combo-box-header {
+    background-color: $nebula;
+    color: $regolith;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.btn {
+    background-color: $nebula;
+    color: $regolith;
+    border-radius: 20px;
+    padding: 8px 15px;
+
+}
+
+.select-kit.combo-box.category-drop .category-drop-header {
+    color: $regolith;
+
+}
