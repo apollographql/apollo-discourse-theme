@@ -17,6 +17,47 @@ a{
     }
 }
 
+.nav a{
+    color: $text-color;
+}
+
+label {
+    color: $satellite-700;
+}
+input {
+    color: $satellite-600;
+}
+input[type=text]{
+    border: 1px solid $primary-200;
+    outline: none;
+    border-radius: 0;
+}
+input[type=text]:focus {
+    border: 1px solid $primary-50;
+}
+.color-picker .add-on{
+    border: 1px solid $primary-200;
+    border-right:none ;
+    border-top-left-radius: $corner-md;
+    border-bottom-left-radius: $corner-md;
+
+}
+input.hex-input {
+
+    border: 1px solid $primary-200;
+    color: $satellite-600;
+    
+}
+input[type=text]:not(.hex-input)  {
+    color: $satellite-600;
+    border-radius: $corner-md;
+}
+
+div.edit-category .edit-category-title-bar {
+    background-color: $nebula;
+    border-bottom: 1px solid $primary-300;
+}
+
 .topic-body .cooked details, details .d-editor-preview, details.details__boxed {
     //background-color: #0d171c ;
     border: 1px solid $primary;
@@ -104,9 +145,10 @@ table th {
     height: 4px;
     background-color: $primary-50;
 }
+
 .btn{
-    color: $text-color;
- 
+    color: $text-color; 
+    border-radius: $corner-md;
 }
 
 .d-header {
@@ -156,9 +198,14 @@ table th {
     color: $primary-200;
 }
 
+.select-kit.combo-box .select-kit-header 
+{
+    border-radius: $corner-md;
+    border: 1px solid $primary-200;
+}
 .select-kit.is-expanded .select-kit-body{
     border: 1px solid $primary-200;
-    border-radius: $corner-sm;
+    border-radius: $corner-md;
 } 
 
 .list-controls .combo-box .combo-box-header{
@@ -169,7 +216,7 @@ table th {
     outline: 1px solid $primary-200;
     border: none;
     outline-offset: -1px;
-    border-radius: $corner-sm;
+    border-radius: $corner-md;
 }
 // .list-controls .combo-box .combo-box-header {
 //     background-color: $nebula;
