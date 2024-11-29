@@ -7,9 +7,18 @@ $titan:#FCD200;
 $neptune: #0083FC;
 $cosmos: #7B00C7;
 
+
+$satellite-700: #7C928F;
+$satellite-600: #98A9A7;
+$satellite-500: #B4C0BE;
+$satellite-400: $satellite;
+$satellite-300: #ECEFEF;
+$satellite-200: #F9FAFA;
+$satellite-100: #FFF;
+
 $primary: #254250;
 $primary-low: #15252D;
-$primary-very-low: #0B1418;
+$primary-very-low: #0d171c;
 $primary-low-mid: #17303c;
 $primary-medium: #254250;
 $primary-high: #365E72;
@@ -29,19 +38,19 @@ $header_primary-low-mid: $satellite;
 $header_primary-medium: $satellite;
 $header_primary-high: $satellite;
 $header_primary-very-high: $satellite;
-$secondary-low: $regolith;
-$secondary-medium: $regolith;
-$secondary-high: $regolith;
-$secondary-very-high: $regolith;
-$tertiary-very-low: $regolith;
-$tertiary-low: $regolith;
+$secondary-low: $titan;
+$secondary-medium: $titan;
+$secondary-high: $titan;
+$secondary-very-high: $titan;
+$tertiary-very-low: $titan;
+$tertiary-low: $titan;
 $tertiary-medium: $horizon;
 $tertiary-high: $horizon;
 $tertiary-hover: $horizon;
 
 
 $secondary: $nebula;
-$tertiary: $horizon;
+$tertiary: $primary  ;
 $quaternary: $aurora;
 $header_background: $nebula;
 $header_primary: $satellite;
@@ -52,4 +61,4 @@ $love: $neptune;
 $selected: $primary-400;
 $hover: $primary-100;
 
-$text-color: rgb(199, 207, 206);
+$text-color: $satellite;

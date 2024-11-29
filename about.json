@@ -10,7 +10,8 @@
   "assets": {
     "images": [
       "images/logo_apollo.png"
-    ]
+    ],
+      "icons-sprite": "/assets/feather-icons.svg"
   },
   "modifiers": {},
   "color_schemes": {
