@@ -1,4 +1,4 @@
-# /Users/raph/Documents/apollo-dev/discource-apollo-2
+# discource-apollo theme
 
 **Theme Summary**
 
