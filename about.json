@@ -11,7 +11,10 @@
     "images": [
       "images/logo_apollo.png"
     ],
-      "icons-sprite": "/assets/feather-icons.svg"
+    "aeonik-regular": "assets/fonts/aeonik/Aeonik-Regular.woff2",
+    "aeonik-bold": "assets/fonts/aeonik/Aeonik-Bold.woff2",
+    "aeonik-medium": "assets/fonts/aeonik/Aeonik-Medium.woff2",
+    "icons-sprite": "assets/feather-icons.svg"
   },
   "modifiers": {},
   "color_schemes": {
@@ -29,4 +32,5 @@
       "selected": "FFD700",
       "hover": "FFD700"
     }
-  }}
+  }
+}

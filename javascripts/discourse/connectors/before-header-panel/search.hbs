@@ -1,0 +1,241 @@
+<div id="autocomplete" style="z-index:100;"></div>
+<div id="autocomplete-panel-container" style="z-index:100; position:absolute; top:60px"></div>
+
+
+<script>
+    const { autocomplete, getAlgoliaResults } = window['@algolia/autocomplete-js'];
+    const { algoliasearch } = window['algoliasearch'];
+    console.log('algoliasearch', algoliasearch);
+    const searchClient = algoliasearch(
+        'Q0CJ63JM7B',
+        'e6996c1be6825141605220623fb10646'
+    );
+
+    autocomplete({
+        container: '#autocomplete',
+        panelContainer: '#autocomplete-panel-container',
+        debug: false,
+        openOnFocus: true,
+        placeholder: 'Search Apollo documentation, definitions, tutorials and more',
+        insights: true,
+        detachedMediaQuery: 'none',
+        getSources({ query }) {
+            return [{
+                sourceId: 'kb',
+                getItems() {
+                    return getAlgoliaResults({
+                        searchClient,
+                        queries: [
+                            {
+                                indexName: 'confluence',
+                                query,
+                                params: {
+                                    hitsPerPage: 3,
+                                    attributesToSnippet: ['text:35'],
+                                    snippetEllipsisText: '…',
+                                },
+                            },
+                        ],
+
+                    });
+                }, templates: {
+                    header({ html }) {
+                        return html`<h2>Knowledge Base</h2>`;
+                    },
+                    item({ item, components, html }) {
+                        return html`<div>
+                            <a href="https://apollosupport.refined.site/space/ETKB/${item.objectID}">
+                                <h3>${components.Highlight({ hit: item, attribute: 'title', })}</h3>
+                                <p>${components.Snippet({ hit: item, attribute: 'text', })}</p>
+                            </a>
+                         </div>`;
+                    },
+                },
+            },
+            {
+                sourceId: 'docs',
+                getItems() {
+                    return getAlgoliaResults({
+                        searchClient,
+                        queries: [
+                            {
+                                indexName: 'docs',
+                                query,
+                                params: {
+                                    hitsPerPage: 3,
+                                    attributesToSnippet: ['text:35'],
+                                    snippetEllipsisText: '…',
+                                },
+                            },
+                        ],
+
+                    });
+                }, templates: {
+                    header({ html }) {
+                        return html`<h2>Documentation</h2>`;
+                    },
+                    item({ item, components, html }) {
+                        return html`<div>
+                            <a href="${item.url}">
+                                <h3>${components.Highlight({ hit: item, attribute: 'title', })}</h3>
+                                <p>${components.Snippet({ hit: item, attribute: 'text', })}</p>
+                            </a>
+                         </div>`;
+                    },
+                    noResults() {
+                        return "Sorry, we couldn't find any result for your search.";
+                    },
+                },
+            },
+            {
+                sourceId: 'apollopedia',
+                getItems() {
+                    return getAlgoliaResults({
+                        searchClient,
+                        queries: [
+                            {
+                                indexName: 'apollopedia',
+                                query,
+                                params: {
+                                    hitsPerPage: 2,
+                                    filters: 'internalOnly:false'
+                                },
+                            },
+                        ],
+
+                    });
+                }, templates: {
+                    header({ html }) {
+                        return html`<h2>Definitions</h2>`;
+                    },
+                    item({ item, components, html }) {
+                        return html`<div>
+                            <a href="${item.url}" target="_blank">
+                                <h3>${components.Highlight({ hit: item, attribute: 'term', })}</h3>
+                                <p>${components.Snippet({ hit: item, attribute: 'text', })}</p>
+                            </a>
+                         </div>`;
+                    },
+                },
+            },
+            ];
+        },
+    });
+</script>
+
+
+<style>
+    #autocomplete {
+        width: 100%;
+
+    }
+
+    .aa-Form {
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aa-InputWrapperPrefix,
+    .aa-InputWrapperSuffix {
+        display: none;
+    }
+
+    .aa-InputWrapper {
+        width: 100%;
+    }
+
+    .aa-Autocomplete {
+        min-width: 100%;
+    }
+
+    #autocomplete-0-input {
+        min-width: 100%;
+        border-radius: 8px;
+        padding: 10px 10px;
+        font-size: 16px;
+        color: #98A9A7;
+        background-color: #13222A;
+        border: solid 1px #98A9A7;
+        box-shadow: none;
+    }
+
+
+    .aa-Panel {
+        z-index: 100;
+        margin: 12px 0 0 0 !important;
+        border-radius: 18px !important;
+        color: #FFEEE6;
+        background-color: #13222A;
+    }
+
+    .aa-Autocomplete {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .aa-Item a:hover {
+        text-decoration: none;
+    }
+
+    .aa-Item a {
+        color: #13222A;
+    }
+
+    mark {
+        background-color: #FFEEE6;
+    }
+
+    h3 mark {
+        font-weight: 600;
+    }
+
+    p mark {
+        font-weight: 500;
+    }
+
+    .aa-SourceHeader {
+        margin: 0 !important;
+        background-color: #FFEEE6 !important;
+    }
+
+    .aa-SourceHeader h2 {
+        padding: 8px 12px !important;
+        font-weight: 600;
+    }
+
+    .aa-Panel--scrollable {
+        padding: 0 !important;
+    }
+
+    .aa-Item {
+        padding: 8px 12px 18px 12px !important;
+        border-bottom: #FFCCA8 1px solid;
+    }
+
+    .aa-Item h3 {
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+
+    .aa-Item[aria-selected="true"] {
+        background-color: #FFF0E6 !important;
+    }
+
+    .aa-SubmitIcon {
+        color: #98A9A7 !important;
+    }
+
+    .aa-Form:focus-within {
+        border-color: #FFCCA8 !important;
+        border-width: 1px;
+        box-shadow: none !important
+    }
+
+    ::placeholder {
+        color: #98A9A7 !important;
+        opacity: 1;
+    }
+</style>
