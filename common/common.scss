@@ -16,6 +16,16 @@
     src: url($aeonik-bold) format('woff2')
 }
 
+@font-face {
+    font-family: "Aeonik-Medium";
+    src: url($aeonik-medium) format('woff2')
+}
+
+@font-face {
+    font-family: "Aeonik-Regular";
+    src: url($aeonik-regular) format('woff2')
+}
+
 h1,
 h2,
 h3,
@@ -74,6 +84,10 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
     }
 }
 
+body.has-sidebar-page .wrap {
+    margin: 0;
+    max-width: 100%;
+}
 
 #main-outlet {
     color: $text-color;
@@ -96,4 +110,8 @@ body:not(.ios-safari-composer-hacks) #reply-control.open {
 
 .settings .setting .desc {
     color: $satellite-600;
+}
+
+.powered-by-discourse {
+    display: none;
 }

@@ -11,7 +11,7 @@
         }
 
         &.icon {
-            color: $primary-200;
+            color: $primary-100;
         }
     }
 
@@ -20,13 +20,12 @@
     }
 }
 
-body.has-sidebar-page .wrap {
-    margin: 0;
-    max-width: 100%;
-}
-
 .sidebar-section-wrapper {
     border-bottom: 1px solid $primary-medium;
+
+    .sidebar-section-header-caret .d-icon {
+        color: $primary-100;
+    }
 
     .sidebar-section-header {
         color: $text-color !important;
@@ -50,8 +49,12 @@ body.has-sidebar-page .wrap {
     .sidebar-footer-wrapper {
         background-color: $nebula;
     }
-}
 
-.sidebar-section-link-content-text {
-    color: $satellite;
+    .sidebar-section-link-content-text {
+        color: $satellite;
+    }
+
+    .sidebar-footer-actions-button.btn .d-icon {
+        color: $primary-200;
+    }
 }

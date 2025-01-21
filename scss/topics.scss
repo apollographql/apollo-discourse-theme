@@ -1,14 +1,22 @@
+// topic list is both in categories and topics
 .topic-list {
+    thead {
+        border-bottom: 4px solid $primary-300;
+        font-family: "Aeonik-Regular";
+
+    }
+
     td {
-        color: $text-color;
+        color: $satellite-600;
     }
 
-    .main-link a.title {
-        color: $text-color;
+    tr {
+        border-bottom: 1px solid $primary-300;
     }
 
-    .topic-list-item.visited .topic-list-data a.title:not(.badge-notification) {
-        color: $text-color;
+    th {
+        color: $satellite-600;
+
     }
 
     .topic-list-item-separator .topic-list-data {
@@ -19,40 +27,45 @@
         }
     }
 
+    .main-link a.title {
+        color: $satellite-600;
+        font-family: "Aeonik-regular";
+    }
+
+
+
     .topic-list-item {
-        color: $text-color !important;
+
+        &.visited .topic-list-data a.title:not(.badge-notification) {
+            color: $satellite-300;
+        }
+
+        .link-bottom-line .discourse-tag {
+            color: $satellite-600;
+
+        }
     }
 }
 
 #topic-title h1 a {
-    color: $text-color;
+    color: $satellite-300;
 }
 
 .topic-map__contents .topic-map__stats.--single-stat button span {
     color: $satellite-600 !important;
 }
 
-.topic-body .cooked details,
-details .d-editor-preview,
-details.details__boxed {
-    //background-color: #0d171c ;
-    border: 1px solid $primary;
-    color: $text-color;
-    border-radius: $corner-sm;
-}
+.topic-body {
 
-.list-controls {
-    .navigation-container {
-        .category-breadcrumb {
-            color: aqua;
-        }
+    .cooked details,
+    details .d-editor-preview,
+    details.details__boxed {
+        border: 1px solid $primary;
+        color: $text-color;
+        border-radius: $corner-sm;
     }
 }
 
-#topic-footer-buttons {
-    .topic-notifications-button {
-        .reason {
-            //color: $primary-100;
-        }
-    }
+.footer-message {
+    color: $satellite-600;
 }

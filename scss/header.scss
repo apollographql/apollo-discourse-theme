@@ -1,13 +1,31 @@
 .d-header {
     border-bottom: 1px solid $primary-medium;
 
-    #site-logo {
-        // width: 100px;
-        padding-right: 15px;
-        height: 25px;
+    .home-logo-wrapper-outlet {
+        min-width: 166px;
+        padding-left: 10px;
+
+    }
+
+    .customLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        .communityTag {
+            font-size: 0.7em;
+            border-radius: $corner-sm;
+            padding: 2px 5px;
+            border: solid 1px $primary-300;
+        }
     }
 
     .search-dropdown {
+        display: none;
+    }
+
+    .chat-header-icon {
         display: none;
     }
 
