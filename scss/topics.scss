@@ -60,7 +60,7 @@
 
 .topic-body {
 
-    border-top: 1px solid $primary-300;
+    border-top: 1px solid $primary;
 
     .post-controls .extra-buttons .accepted {
         color: $aurora;
@@ -81,4 +81,8 @@
 
 .first.new-user:not(.staff) a {
     color: $primary-100;
+}
+
+.topic-map.--op {
+    border: 1px solid $primary;
 }
