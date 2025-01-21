@@ -115,3 +115,8 @@ body.has-sidebar-page .wrap {
 .powered-by-discourse {
     display: none;
 }
+
+.alert.alert-info {
+    background-color: $primary-200;
+    color: $primary-600;
+}

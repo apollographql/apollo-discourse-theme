@@ -28,7 +28,7 @@
     }
 
     .main-link a.title {
-        color: $satellite-600;
+        color: $satellite-300;
         font-family: "Aeonik-regular";
     }
 
@@ -37,11 +37,14 @@
     .topic-list-item {
 
         &.visited .topic-list-data a.title:not(.badge-notification) {
-            color: $satellite-300;
+            color: $satellite-600;
         }
 
         .link-bottom-line .discourse-tag {
-            color: $satellite-600;
+            color: $primary-100;
+            padding: 0px 4px;
+            border-radius: 3px;
+            background-color: $primary-400;
 
         }
     }

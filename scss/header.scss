@@ -15,9 +15,11 @@
 
         .communityTag {
             font-size: 0.7em;
-            border-radius: $corner-sm;
+            border-radius: 3px;
             padding: 2px 5px;
-            border: solid 1px $primary-300;
+            border: solid 1px $primary-200;
+            font-family: "Inter";
+
         }
     }
 
