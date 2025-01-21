@@ -60,6 +60,12 @@
 
 .topic-body {
 
+    border-top: 1px solid $primary-300;
+
+    .post-controls .extra-buttons .accepted {
+        color: $aurora;
+    }
+
     .cooked details,
     details .d-editor-preview,
     details.details__boxed {
@@ -71,4 +77,8 @@
 
 .footer-message {
     color: $satellite-600;
+}
+
+.first.new-user:not(.staff) a {
+    color: $primary-100;
 }

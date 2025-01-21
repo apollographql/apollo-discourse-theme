@@ -10,20 +10,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
 @font-face {
     font-family: "Aeonik-Bold";
-    src: url($aeonik-bold) format('woff2')
+    src: url($aeonik-bold) format('woff2');
 }
 
 @font-face {
     font-family: "Aeonik-Medium";
-    src: url($aeonik-medium) format('woff2')
+    src: url($aeonik-medium) format('woff2');
 }
 
 @font-face {
     font-family: "Aeonik-Regular";
-    src: url($aeonik-regular) format('woff2')
+    src: url($aeonik-regular) format('woff2');
 }
 
 h1,
@@ -32,15 +31,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Aeonik-Bold"
+    font-family: "Aeonik-Bold";
 }
-
 
 body {
     background-color: $nebula;
     font-family: "Inter", sans-serif;
     font-weight: 300;
-    color: $text-color ;
+    color: $text-color;
 }
 
 a {
@@ -56,8 +54,6 @@ blockquote {
     border-left: 4px solid $satellite-700;
 }
 
-
-
 table th {
     color: $text-color;
 }
@@ -66,18 +62,14 @@ table th {
     color: $text-color;
 }
 
-
 #main-outlet-wrapper {
     margin: 0;
 }
 
-body:not(.ios-safari-composer-hacks) #reply-control.open {
-    border-radius: $corner-md $corner-md 0 0;
-}
-
+body:not(.ios-safari-composer-hacks) #reply-control.open,
 .open .grippie {
     border-radius: $corner-md $corner-md 0 0;
-    color: $primary-50 ;
+    color: $primary-50;
 
     &:before {
         border-top: 3px double $primary-200;
@@ -89,19 +81,17 @@ body.has-sidebar-page .wrap {
     max-width: 100%;
 }
 
-#main-outlet {
-    color: $text-color;
-}
-
-
-.user-main {
-    background-color: $nebula;
-    color: $text-color !important;
-}
-
-
+#main-outlet,
+.user-main,
 #banner-content {
     color: $text-color;
+}
+
+.user-main,
+.alert.alert-info,
+.post-notice {
+    background-color: $nebula;
+    border-radius: $corner-md;
 }
 
 #banner button {
@@ -116,7 +106,8 @@ body.has-sidebar-page .wrap {
     display: none;
 }
 
-.alert.alert-info {
-    background-color: $primary-200;
-    color: $primary-600;
+.alert.alert-info,
+.post-notice {
+    background-color: $primary-300;
+    color: $satellite-300;
 }
