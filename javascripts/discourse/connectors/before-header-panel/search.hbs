@@ -125,9 +125,16 @@
 
 
 <style>
+    .before-header-panel-outlet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
     #autocomplete {
         width: 100%;
-
     }
 
     .aa-Form {
@@ -155,11 +162,15 @@
         padding: 10px 10px;
         font-size: 16px;
         color: #98A9A7;
-        background-color: #13222A;
-        border: solid 1px #98A9A7;
+        background-color: var(--primary-600);
+        border: solid 1px var(--primary-medium);
         box-shadow: none;
+
     }
 
+    input.aa-Input {
+        margin-bottom: 0px;
+    }
 
     .aa-Panel {
         z-index: 100;
@@ -172,6 +183,7 @@
     .aa-Autocomplete {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
 

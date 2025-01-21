@@ -1,0 +1,31 @@
+div.edit-category {
+    .edit-category-title-bar {
+        background-color: $nebula;
+        border-bottom: 1px solid $primary-300;
+    }
+}
+
+.badge-category__wrapper {
+    .badge-category {
+        &:before {
+            border-radius: .625rem;
+        }
+
+        &__name {
+            color: $text-color;
+        }
+    }
+}
+
+.category-list {
+    tbody {
+        .category {
+            h3 {
+                a[href] {
+                    color: $text-color;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.admin-nav {
+    .nav-stacked {
+        a.active {
+            color: $primary-high;
+        }
+    }
+}
+
+nav.post-controls .actions button {
+    color: $satellite-400;
+}
+
+.nav-pills {
+    >li {
+
+        a,
+        button {
+            color: $text-color;
+
+            &.active {
+                color: #FFF;
+                font-weight: 600;
+
+                .d-icon {
+                    color: $primary-50;
+                }
+
+                &:after {
+                    height: 4px;
+                    background-color: $primary-50;
+                }
+            }
+        }
+    }
+}
+
+
+.select-kit {
+    .select-kit-header:not(.btn) {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+
+    &.combo-box {
+        .select-kit-header {
+            border: 1px solid $primary-100 !important;
+
+            .select-kit-header-wrapper>div,
+            svg {
+                color: $primary-100 !important;
+            }
+        }
+    }
+
+    &.is-expanded {
+        .select-kit-body {
+            border: 1px solid $primary-200;
+            border-radius: $corner-md;
+            background-color: $primary-600;
+            margin: 0.5rem 0 0 0 !important;
+            padding: 0.5rem;
+
+        }
+    }
+
+    &.single-select {
+
+
+        &.is-expanded .select-kit-header:not(.btn),
+        .select-kit-header:not(.btn):focus,
+        .select-kit-header:not(.btn):active {
+            outline: 1px solid $primary-200;
+            border: none;
+            outline-offset: -1px;
+            background-color: $primary-600;
+        }
+    }
+}
+
+.list-controls {
+    .combo-box {
+        .combo-box-header {
+            border-radius: $corner-2xl;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+label {
+    color: $satellite-700;
+}
+
+input {
+    color: $satellite-600;
+
+    &[type=text] {
+        border: 1px solid $primary-200;
+        outline: none;
+        border-radius: 0;
+
+        &:focus {
+            border: 1px solid $primary-50;
+        }
+
+        &:not(.hex-input) {
+            color: $satellite-600;
+        }
+    }
+
+    &.hex-input {
+        border: 1px solid $primary-200;
+        color: $satellite-600;
+    }
+}
+
+.color-picker {
+    .add-on {
+        border: 1px solid $primary-200;
+        border-right: none;
+        border-top-left-radius: $corner-md;
+        border-bottom-left-radius: $corner-md;
+    }
+}

@@ -1,0 +1,17 @@
+.d-header {
+    border-bottom: 1px solid $primary-medium;
+
+    #site-logo {
+        // width: 100px;
+        padding-right: 15px;
+        height: 25px;
+    }
+
+    .search-dropdown {
+        display: none;
+    }
+
+    .d-header-mode {
+        display: none;
+    }
+}

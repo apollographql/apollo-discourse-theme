@@ -1,0 +1,57 @@
+.sidebar-section-header-text {
+    font-family: "Aeonik-Bold";
+}
+
+.sidebar-section-link-wrapper {
+    .sidebar-section-link-prefix {
+        .prefix-span {
+            border-radius: .8em;
+            width: .8em;
+            height: .8em;
+        }
+
+        &.icon {
+            color: $primary-200;
+        }
+    }
+
+    .sidebar-section-link.active .sidebar-section-link-prefix.icon {
+        color: $primary-50;
+    }
+}
+
+body.has-sidebar-page .wrap {
+    margin: 0;
+    max-width: 100%;
+}
+
+.sidebar-section-wrapper {
+    border-bottom: 1px solid $primary-medium;
+
+    .sidebar-section-header {
+        color: $text-color !important;
+    }
+}
+
+.header-sidebar-toggle button .d-icon,
+.d-header-icons .d-icon {
+    color: $text-color !important;
+}
+
+.sidebar-wrapper {
+    border-right: 1px solid $primary-medium;
+
+    .sidebar-sections {
+        padding: 1.5rem 0 1rem;
+    }
+
+    &,
+    .sidebar-container,
+    .sidebar-footer-wrapper {
+        background-color: $nebula;
+    }
+}
+
+.sidebar-section-link-content-text {
+    color: $satellite;
+}

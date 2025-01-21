@@ -1,0 +1,58 @@
+.topic-list {
+    td {
+        color: $text-color;
+    }
+
+    .main-link a.title {
+        color: $text-color;
+    }
+
+    .topic-list-item.visited .topic-list-data a.title:not(.badge-notification) {
+        color: $text-color;
+    }
+
+    .topic-list-item-separator .topic-list-data {
+        border-top: 1px solid $primary-300;
+
+        span {
+            color: $primary-200;
+        }
+    }
+
+    .topic-list-item {
+        color: $text-color !important;
+    }
+}
+
+#topic-title h1 a {
+    color: $text-color;
+}
+
+.topic-map__contents .topic-map__stats.--single-stat button span {
+    color: $satellite-600 !important;
+}
+
+.topic-body .cooked details,
+details .d-editor-preview,
+details.details__boxed {
+    //background-color: #0d171c ;
+    border: 1px solid $primary;
+    color: $text-color;
+    border-radius: $corner-sm;
+}
+
+.list-controls {
+    .navigation-container {
+        .category-breadcrumb {
+            color: aqua;
+        }
+    }
+}
+
+#topic-footer-buttons {
+    .topic-notifications-button {
+        .reason {
+            //color: $primary-100;
+        }
+    }
+}

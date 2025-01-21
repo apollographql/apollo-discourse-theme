@@ -1,0 +1,17 @@
+.btn {
+    color: $text-color;
+    border-radius: $corner-md;
+}
+
+button.widget-button {
+    &.btn-flat {
+        svg {
+            color: $satellite-600;
+        }
+
+        &.d-hover>svg {
+            color: $primary-50 !important;
+        }
+    }
+
+}
