@@ -17,15 +17,82 @@ div.edit-category {
     }
 }
 
+.categories-and-latest {
+    tr {
+        border-bottom: 1px solid $primary-300 ;
+    }
+
+    .table-heading {
+        border-bottom: 3px solid $primary-300 ;
+
+    }
+}
+
 .category-list {
+    thead {
+        font-family: "Aeonik-Regular";
+        font-size: 1.2rem;
+
+        tr {
+            border-bottom: 3px solid $primary-300 ;
+
+        }
+
+        th {
+            color: $satellite-600;
+        }
+    }
+
+
     tbody {
         .category {
             h3 {
                 a[href] {
-                    color: $text-color;
-                    font-weight: 600;
+                    color: $satellite-300;
+                    font-family: "Aeonik-Medium";
                 }
             }
         }
+
+
+    }
+
+    .category-description span {
+        color: $satellite-600;
+    }
+
+    span.value {
+        color: $satellite-600;
+    }
+}
+
+.latest-topic-list {
+    .table-heading {
+        font-family: "Aeonik-Regular";
+        color: $satellite-600;
+        font-size: 1.2rem;
+    }
+
+    .heading {
+        color: $satellite-100;
+        font-family: "Aeonik-Medium";
+    }
+
+    .latest-topic-list-item {
+        border-bottom: 1px solid $primary-300;
+
+        .top-row {
+            a {
+                color: $satellite-300;
+
+                &:visited {
+                    color: $satellite-600;
+                }
+            }
+        }
+    }
+
+    span.number {
+        color: $satellite-600;
     }
 }
