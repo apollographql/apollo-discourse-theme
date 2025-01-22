@@ -26,9 +26,9 @@ button.widget-button {
 
 a.btn.btn-default {
     color: $primary-100;
-
 }
 
-button.btn.like-count {
-    color: $primary-100;
+.like-count,
+.d-icon-d-liked {
+    color: $horizon !important;
 }
