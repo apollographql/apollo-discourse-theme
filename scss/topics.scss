@@ -41,19 +41,29 @@
             color: $satellite-600;
         }
 
-        .link-bottom-line .discourse-tag {
-            color: $primary-100;
-            padding: 0px 4px;
-            border-radius: 3px;
-            background-color: $primary-400;
-
-        }
+        // .link-bottom-line .discourse-tag {
+        //     color: $primary-100;
+        //     padding: 0px 4px;
+        //     border-radius: 3px;
+        //     background-color: $primary-400;
+        // }
     }
 }
+
+
 
 #topic-title h1 a {
     color: $satellite-300;
 }
+
+.discourse-tag {
+    color: $primary-100 !important;
+    padding: 0px 4px !important;
+    border-radius: 3px !important;
+    background-color: $primary-400 !important;
+
+}
+
 
 .topic-map__contents .topic-map__stats.--single-stat button span {
     color: $satellite-600 !important;
@@ -124,6 +134,18 @@ nav.post-controls button.widget-button {
 
 .latest-topic-list-item {
     .topic-stats a {
-        color: $satellite-600
+        color: $primary-100;
     }
+}
+
+tr.last-visit+tr.topic-list-item-separator {
+    td.topic-list-data {
+        border-top: 1px solid $aurora ;
+
+        span {
+            color: $aurora;
+        }
+    }
+
+
 }
