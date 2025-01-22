@@ -152,6 +152,10 @@ tr.last-visit+tr.topic-list-item-separator {
 
 }
 
-.post-notice {
+.post-notice.old {
+    color: $primary-200;
+}
+
+.topic-map__stat-label {
     color: $primary-200;
 }
