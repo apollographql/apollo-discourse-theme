@@ -95,3 +95,28 @@
         font-size: 1.2rem;
     }
 }
+
+nav.post-controls button.widget-button {
+    svg {
+        color: $primary-50;
+    }
+
+    &.reply {
+        color: $primary-50;
+
+        .d-icon {
+            color: $primary-50;
+        }
+    }
+}
+
+.topic-footer-main-buttons {
+
+    button.btn.btn-icon,
+    button.btn.btn-icon-text {
+        &:not(.btn-primary) {
+            background-color: $primary-300;
+        }
+
+    }
+}
