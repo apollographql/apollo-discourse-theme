@@ -45,6 +45,10 @@ nav.post-controls .actions button {
         .select-kit-header {
             border: 1px solid $primary-100 !important;
 
+            &:hover {
+                background-color: $primary-400;
+            }
+
             .select-kit-header-wrapper>div,
             svg {
                 color: $primary-100 !important;

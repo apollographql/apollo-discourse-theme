@@ -3,6 +3,14 @@
     border-radius: $corner-2xl;
 }
 
+#topic-footer-buttons {
+
+    .btn-icon-text:hover {
+        background-color: $primary-200;
+    }
+
+}
+
 button.widget-button {
     &.btn-flat {
         svg {

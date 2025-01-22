@@ -1,0 +1,48 @@
+// Editor
+
+#reply-control .reply-to .reply-details .d-icon {
+    color: $primary-200;
+}
+
+.reply-to .composer-action-title {
+
+    .topic-link {
+        color: $primary-50;
+    }
+}
+
+.d-editor-container {
+
+    .d-editor-textarea-wrapper {
+        border: 1px solid $primary-300;
+    }
+
+    .d-editor-button-bar {
+        .btn.no-text {
+            color: $satellite-600;
+        }
+
+        border-bottom: 1px solid $primary-300;
+    }
+
+    textarea {
+        color: $satellite-400;
+    }
+}
+
+.composer-popup .btn.close {
+    color: $primary-100;
+}
+
+.composer-controls button .d-icon {
+    color: $primary-200;
+
+}
+
+.toggle-preview .d-icon {
+    color: $primary-200;
+}
+
+.d-editor-preview {
+    color: $satellite-100
+}
