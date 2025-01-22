@@ -61,6 +61,7 @@
     padding: 0px 4px !important;
     border-radius: 3px !important;
     background-color: $primary-400 !important;
+    margin-right: 2px;
 
 }
 
@@ -106,16 +107,17 @@
     }
 }
 
+nav.post-controls button.btn-icon,
 nav.post-controls button.widget-button {
     svg {
-        color: $primary-50;
+        color: $primary-100;
     }
 
     &.reply {
-        color: $primary-50;
+        color: $primary-100;
 
         .d-icon {
-            color: $primary-50;
+            color: $primary-100;
         }
     }
 }
@@ -148,4 +150,8 @@ tr.last-visit+tr.topic-list-item-separator {
     }
 
 
+}
+
+.post-notice {
+    color: $primary-200;
 }
