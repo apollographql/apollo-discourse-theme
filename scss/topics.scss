@@ -3,7 +3,6 @@
     thead {
         border-bottom: 4px solid $primary-300;
         font-family: "Aeonik-Regular";
-
     }
 
     td {
@@ -87,4 +86,12 @@
 
 .topic-map.--op {
     border-top: 1px solid $primary;
+}
+
+.loading-container {
+    thead {
+        border-bottom: none;
+        font-family: "Aeonik-Regular";
+        font-size: 1.2rem;
+    }
 }
