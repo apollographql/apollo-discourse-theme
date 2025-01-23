@@ -61,9 +61,17 @@ div.edit-category {
         color: $satellite-600;
     }
 
-    span.value {
-        color: $satellite-600;
+    .topics {
+        div:first-child {
+            color: $satellite-600;
+
+            span.value {
+                color: $satellite-600;
+            }
+        }
+
     }
+
 }
 
 .latest-topic-list {
@@ -89,6 +97,10 @@ div.edit-category {
                     color: $satellite-600;
                 }
             }
+        }
+
+        span.topic-status svg.d-icon-far-square-check {
+            fill: $aurora;
         }
     }
 
