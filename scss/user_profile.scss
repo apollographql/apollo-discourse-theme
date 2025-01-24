@@ -1,1 +1,104 @@
 //
+
+.user-main {
+    h3 {
+        color: $satellite-300;
+    }
+
+    a.btn.btn-default,
+    button.btn.btn-default {
+        color: $primary-50;
+        // background-color: $primary-300;
+        border: 1px solid $primary-50;
+
+        &:hover {
+            background-color: $primary-50;
+            color: $primary-500;
+
+        }
+    }
+
+    .about.collapsed-info .details {
+        border-bottom: 1px solid $primary-300;
+    }
+
+    .new-user-wrapper .user-navigation {
+        border-bottom: 1px solid $primary-300;
+    }
+
+    .user-content {
+        .stats-section {
+            .value {
+                color: $satellite-300;
+
+            }
+
+            .label {
+                color: $satellite-600;
+            }
+        }
+
+        .top-section {
+            .topic-info {
+                color: $satellite-400;
+            }
+
+            a {
+                color: $primary-50;
+            }
+
+            .top-sub-section li {
+                border-left: 1px solid $primary-300;
+            }
+        }
+    }
+
+    .badge-group-list {
+        .badge-card {
+            background-color: $primary-500;
+            border: 1px solid $primary-300;
+            border-radius: $corner-md;
+
+            h3 a.badge-link {
+                color: $satellite-400;
+            }
+
+            .badge-summary {
+                a {
+                    color: $primary-50;
+                }
+
+                color: $satellite-400;
+            }
+        }
+    }
+
+    .about .secondary {
+
+        dd,
+        dd span {
+            color: $primary-100;
+        }
+    }
+
+    .user-stream {
+        .user-stream-item {
+            border-bottom: 1px solid $primary-300;
+
+            .user-stream-item__details {
+                .stream-topic-title a {
+                    color: $satellite-400;
+
+                }
+            }
+
+            p.excerpt {
+                color: $satellite-600;
+            }
+        }
+
+        .relative-date {
+            color: $primary-100;
+        }
+    }
+}
