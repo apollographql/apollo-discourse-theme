@@ -41,5 +41,26 @@
 
     .d-editor-preview {
         color: $satellite-100;
+        border: 1px solid $primary-300;
+        padding: 8px;
+        background-color: $primary-600;
+
+
+        &::before {
+            content: "Preview";
+            color: $primary-100;
+        }
+
     }
+
+}
+
+.select-kit .select-kit-row.category-row .category-desc {
+    color: $satellite-600;
+}
+
+#reply-control {
+    border-top-left-radius: $corner-md ;
+    border-top-right-radius: $corner-md ;
+
 }
