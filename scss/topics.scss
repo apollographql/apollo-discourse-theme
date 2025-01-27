@@ -167,12 +167,17 @@ tr.last-visit+tr.topic-list-item-separator {
 
 .small-action.topic-post-visited .topic-post-visited-line {
     color: $aurora;
+    border-bottom: 1px solid $aurora;
+}
+
+.aside.quote .title {
+    background-color: $primary-400;
 }
 
 nav.post-controls .show-replies {
     color: $primary-200 !important;
 
-    .btn-flat .d-icon {
+    .d-icon {
         color: $primary-200 !important;
     }
 }
