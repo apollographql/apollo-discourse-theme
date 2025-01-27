@@ -34,6 +34,9 @@ nav.post-controls .actions button {
     }
 }
 
+.more-topics__container .nav li .btn .d-button-label {
+    color: $primary-100 !important;
+}
 
 .select-kit {
     .select-kit-header:not(.btn) {
