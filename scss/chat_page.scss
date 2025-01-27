@@ -1,0 +1,189 @@
+.main-chat-outlet {
+    .chat-notices {
+        .chat-retention-reminder {
+            color: $primary-50;
+        }
+    }
+
+    .chat-channel-name {
+        color: $satellite-400;
+    }
+
+    .all-loaded-message {
+        color: $primary-200;
+    }
+
+    .chat-message-separator-date+.chat-message-separator__line-container .chat-message-separator__line {
+        border-top: 1px solid $aurora;
+    }
+
+    .chat-user-avatar.is-online .avatar {
+        box-shadow: inset 0px 0px 0px 1px $aurora, inset 0px 0px 0px 2px $secondary;
+    }
+
+    .chat-message {
+        svg {
+            color: $primary-200;
+        }
+
+        &:hover {
+            background-color: $primary-300;
+        }
+
+        .discourse-local-date {
+            color: $satellite-600;
+
+            svg {
+                color: $satellite-600;
+            }
+        }
+
+        .chat-message-reaction.reacted {
+            background-color: $primary-600;
+        }
+    }
+
+    .chat-composer__inner-container {
+        background-color: $primary-600;
+        border: 1px solid $primary-300;
+        border-radius: $corner-md;
+        color: $satellite-400;
+
+        textarea {
+            color: $satellite-400;
+        }
+
+        button {
+            svg {
+                color: $primary-200;
+
+                &:hover {
+                    background-color: $primary-50;
+                    color: $primary-500;
+                }
+            }
+
+            &:hover {
+                background-color: $primary-50;
+                color: $primary-500;
+            }
+        }
+    }
+}
+
+.chat-message-actions {
+
+    button.btn,
+    button.chat-message-reaction,
+    details {
+        &:hover {
+            color: $primary-500 !important;
+            background-color: $primary-300;
+        }
+    }
+
+    .chat-message-reaction.reacted {
+        background-color: $primary-600;
+    }
+
+    .bookmark-btn,
+    .reply-btn,
+    .react-btn,
+    .more-buttons {
+        .d-icon {
+            color: $primary-100 !important;
+        }
+    }
+
+    .select-kit.single-select.dropdown-select-box .select-kit-row .texts .name {
+        color: $satellite-400 !important;
+    }
+}
+
+#d-menu-portals {
+    .fk-d-menu__inner-content {
+        border: 1px solid $primary-300;
+    }
+
+    .chat-composer-dropdown__item {
+        button {
+            border-radius: 0px;
+
+            &:hover {
+                background-color: $primary-300;
+                color: $satellite-300;
+            }
+        }
+
+        svg {
+            color: $primary-100;
+        }
+    }
+}
+
+.d-modal__container {
+    .pika-label {
+        color: $satellite-400;
+    }
+
+    button,
+    .pika-prev,
+    .pika-next {
+        color: $primary-100;
+
+        &:hover {
+            background-color: $primary-50;
+            color: $primary-500;
+        }
+    }
+
+    .calendar-date-time-input .time-pickers {
+        color: $satellite-400;
+        border-top: 1px solid $primary-300;
+
+        svg {
+            color: $primary-100;
+        }
+
+        input {
+            border-color: $primary-300;
+        }
+    }
+
+    input.time-picker {
+        color: $satellite-400;
+        border-color: $primary-300;
+    }
+}
+
+.d-modal.discourse-local-dates-create-modal {
+    .date-time-configuration {
+        .date-time-control {
+
+            &.is-filled .date-time,
+            &.is-selected .date-time {
+                color: $satellite-400;
+            }
+
+            .date-time {
+                color: $satellite-600;
+            }
+        }
+    }
+}
+
+.d-modal__footer {
+    button {
+        color: $primary-100;
+        background-color: $primary-600;
+
+        &.btn-primary {
+            background-color: $primary-100;
+            color: $primary-600;
+        }
+    }
+}
+
+.c-navbar__actions .d-icon {
+    color: $primary-100;
+}

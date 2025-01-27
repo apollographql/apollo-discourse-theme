@@ -33,3 +33,15 @@ a.btn.btn-default {
 .d-icon-d-unliked {
     color: $horizon !important;
 }
+
+button.dismiss-btn {
+    &:hover {
+        background-color: $horizon;
+        color: $primary-700;
+
+        svg {
+            fill: $primary-700;
+
+        }
+    }
+}
