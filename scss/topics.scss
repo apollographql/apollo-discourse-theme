@@ -159,3 +159,13 @@ tr.last-visit+tr.topic-list-item-separator {
 .topic-map__stat-label {
     color: $primary-200 !important;
 }
+
+.small-action .small-action-desc {
+    color: $satellite-600;
+    border-top: 1px solid $primary-200;
+}
+
+nav.post-controls {
+    color: $primary-200 !important;
+
+}
