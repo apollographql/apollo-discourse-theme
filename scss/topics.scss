@@ -162,7 +162,11 @@ tr.last-visit+tr.topic-list-item-separator {
 
 .small-action .small-action-desc {
     color: $satellite-600;
-    border-top: 1px solid $primary-600;
+    border-top: 1px solid $satellite-600;
+}
+
+.small-action.topic-post-visited .topic-post-visited-line {
+    color: $aurora;
 }
 
 nav.post-controls .show-replies {

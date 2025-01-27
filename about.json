@@ -26,9 +26,9 @@
       "header_background": "15252D",
       "header_primary": "FFFFFF",
       "highlight": "FFD700",
-      "danger": "FF0000",
-      "success": "00FF00",
-      "love": "FF69B4",
+      "danger": "FC5200",
+      "success": "00FCB5",
+      "love": "7B00C7",
       "selected": "FFD700",
       "hover": "FFD700"
     }
