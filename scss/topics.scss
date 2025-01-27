@@ -162,10 +162,13 @@ tr.last-visit+tr.topic-list-item-separator {
 
 .small-action .small-action-desc {
     color: $satellite-600;
-    border-top: 1px solid $primary-200;
+    border-top: 1px solid $primary-600;
 }
 
-nav.post-controls {
+nav.post-controls .show-replies {
     color: $primary-200 !important;
 
+    .btn-flat .d-icon {
+        color: $primary-200 !important;
+    }
 }
