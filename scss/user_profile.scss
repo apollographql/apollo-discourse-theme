@@ -101,4 +101,59 @@
             color: $primary-100;
         }
     }
+
+    .empty-state {
+        color: $satellite-600;
+    }
+
+    .user-notifications-list {
+        li.notification{
+            border-bottom: 1px solid $primary-200;
+            a{
+                color: $satellite-400;
+                &:visited{
+                    color: $satellite-600;
+                }
+            }
+        }
+        .item-label{
+            color: $primary-100;
+            font-weight: 500;
+        }
+    }
+    .user-navigation.user-navigation-secondary {
+        .navigation-controls .btn{
+border:none;
+border-radius: 0;
+        }
+    }
+
+    .username-preference__current-username{
+        color: $satellite-400;
+    }
+    .control-label{
+        color: $satellite-500;
+    }
+
+    .d-editor-container{
+        background-color: $primary-600;
+        border: 1px solid $primary-200;
+        .d-editor-button-bar{
+            border-bottom: 1px solid $primary-200;
+
+        }
+        .btn{
+            border-radius: 0;
+        }
+        .d-editor-input{
+            color: $satellite-400;
+        }
+        .d-editor-preview-wrapper {
+            border-top: 1px solid $primary-200;
+        }
+    }
+
+    .uploaded-image-preview {
+background: $primary-300 center;
+    }
 }
