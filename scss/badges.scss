@@ -1,0 +1,37 @@
+.show-badge {
+    h1 a {
+        color: $primary-50;
+    }
+}
+
+.badge-card {
+    background-color: $primary-500;
+    border: 1px solid $primary-300;
+    border-radius: $corner-md;
+
+    .badge-info h3 {
+        color: $satellite-400;
+
+    }
+
+    .badge-contents {
+        .badge-link {
+            color: $satellite-400;
+
+        }
+
+        .badge-summary {
+            a {
+                color: $primary-50;
+            }
+
+            color: $satellite-400;
+        }
+
+        .badge-granted {
+            color: $primary-100;
+        }
+    }
+
+
+}

@@ -11,6 +11,16 @@
 
 }
 
+
+p a {
+    color: $satellite-300 !important;
+    text-decoration: underline;
+
+    &:visited {
+        color: $satellite-600 !important;
+    }
+}
+
 button.widget-button {
     &.btn-flat {
         svg {
