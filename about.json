@@ -18,6 +18,19 @@
   },
   "modifiers": {},
   "color_schemes": {
-
+    "Apollo-scheme-ok": {
+      "primary": "FC5200",
+      "secondary": "15252D",
+      "tertiary": "00FCB5",
+      "quaternary": "FC5200",
+      "header_background": "15252D",
+      "header_primary": "FFFFFF",
+      "highlight": "FFD700",
+      "danger": "FF0000",
+      "success": "00FF00",
+      "love": "FF69B4",
+      "selected": "FFD700",
+      "hover": "FFD700"
+    }
   }
 }
