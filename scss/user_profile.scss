@@ -200,10 +200,20 @@
 
 .user-card {
     color: $satellite-400;
+    padding: 10px;
 
     .user-field-name,
     .user-field-value {
         color: $satellite-600;
+    }
+
+    .location-and-website {
+        color: $primary-100;
+
+        .location span,
+        .user-card .location-and-website .website-name a {
+            color: $primary-100;
+        }
     }
 
     .card-content {
