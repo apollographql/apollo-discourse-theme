@@ -1,0 +1,57 @@
+.users-directory {
+
+    .select-kit.dropdown-select-box.period-chooser {
+        .period-chooser-header {
+            h2.selected-name {
+                color: $satellite-400;
+
+                .date-section {
+                    color: $satellite-600;
+                }
+
+                .top-date-string {
+                    color: $satellite-400;
+                }
+            }
+
+            .d-icon {
+                color: $primary-100;
+            }
+        }
+
+        .period-chooser-row {
+            .top-date-string {
+                color: $satellite-600;
+            }
+
+            .date-section {
+                color: $satellite-400;
+            }
+        }
+    }
+
+    .directory-last-updated {
+        color: $primary-100;
+    }
+
+    .directory-table__column-header {
+        color: $satellite-400;
+    }
+
+    .directory-table-container {
+        color: $satellite-400 !important;
+    }
+
+    .directory-table__value {
+        color: $satellite-400;
+    }
+
+    .directory-table .me .directory-table__cell {
+        background-color: $primary-300;
+        color: $satellite-400 !important;
+    }
+
+    .total-rows {
+        color: $primary-100 !important;
+    }
+}
