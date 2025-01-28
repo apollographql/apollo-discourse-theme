@@ -46,3 +46,16 @@
 .dashboard-next .dashboard-problems .actions {
     color: $primary-100;
 }
+
+#user-content {
+    .post-list {
+        .title {
+            color: $satellite-200 !important;
+        }
+
+        .excerpt {
+            color: $satellite-400 !important;
+        }
+    }
+
+}
