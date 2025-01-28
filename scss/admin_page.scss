@@ -1,4 +1,10 @@
 .admin-contents {
+    .alert.alert-error {
+        background-color: $primary-600;
+        border: 1px solid $horizon;
+        border-radius: $corner-md;
+        color: $satellite-400;
+    }
 
     a {
         color: $satellite-400 !important;
