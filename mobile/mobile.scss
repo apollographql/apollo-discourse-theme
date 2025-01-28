@@ -3,15 +3,10 @@
 #main-outlet-wrapper.wrap {
     margin: 0;
 
-
-    //padding: 0;
     .sidebar-wrapper {
         border-right: none;
 
     }
-
-
-
 }
 
 
@@ -26,6 +21,37 @@
 
         &.active {
             color: $primary-50;
+        }
+    }
+}
+
+.category-list-item {
+    .category-text-title {
+        color: $satellite-300 ;
+
+    }
+}
+
+.category-topic-link.visited a.title:not(.badge-notification) {
+    color: $satellite-500;
+}
+
+.category-stat {
+    a {
+        color: $primary-100;
+    }
+}
+
+.categories-list {
+    .category {
+
+        h3 .d-icon,
+        h4 .d-icon {
+            color: $satellite-600;
+        }
+
+        &-list td {
+            color: $satellite-600;
         }
     }
 }
