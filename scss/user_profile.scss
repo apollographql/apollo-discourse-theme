@@ -11,11 +11,29 @@
     }
 
     .instructions {
-        color: $primary-50 !important;
+        color: $satellite-500 !important;
     }
 
     h3 {
         color: $satellite-300;
+    }
+
+    .d-editor-container {
+        .d-editor-textarea-wrapper {
+            border: 1px solid $primary-300;
+        }
+
+        .d-editor-button-bar {
+            border-bottom: 1px solid $primary-300;
+
+            .btn.no-text {
+                color: $satellite-600;
+            }
+        }
+
+        textarea {
+            color: $satellite-400;
+        }
     }
 
     a.btn.btn-default,
