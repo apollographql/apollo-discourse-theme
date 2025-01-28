@@ -1,5 +1,9 @@
 .login-page,
 .signup-page {
+    .d-header {
+        background-color: $primary-600;
+        border-bottom: 1px solid $primary-300;
+    }
 
     .login-body,
     .signup-body {
@@ -9,7 +13,9 @@
             color: $primary-600 !important;
         }
 
-
+        .signup-progress-bar__circle {
+            border-color: $aurora;
+        }
 
         #new-account-link {
             color: $primary-100 !important;
@@ -37,11 +43,11 @@
         }
 
         label.alt-placeholder {
-            color: $primary-200;
+            color: $primary-200 !important;
         }
 
         .instructions,
-        .create-account-email.more-info {
+        .create-account-email .more-info {
             color: $primary-100;
         }
 
