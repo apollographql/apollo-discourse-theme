@@ -1,0 +1,26 @@
+.login-page {
+    .login-body {
+        color: $satellite-300;
+
+        .btn {
+            color: $primary-700 !important;
+        }
+
+        .input-group label.alt-placeholder {
+            color: $primary-200;
+        }
+
+        input {
+            background-color: $primary-600;
+        }
+
+        .login-page-cta__no-account-yet {
+            color: $satellite-500 !important;
+
+        }
+    }
+
+    .sidebar-wrapper {
+        border-right: none;
+    }
+}
