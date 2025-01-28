@@ -61,4 +61,18 @@
     .sidebar-footer-actions-button.btn .d-icon {
         color: $primary-200;
     }
+
+
+}
+
+.admin-area .sidebar-wrapper .admin-panel {
+    background-color: $primary-500;
+}
+
+.sidebar-wrapper .sidebar-sections__back-to-forum svg {
+    color: $primary-100;
+}
+
+.sidebar-filter__input-container {
+    background: $primary-600;
 }

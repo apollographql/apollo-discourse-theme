@@ -1,0 +1,42 @@
+.admin-contents {
+
+    a {
+        color: $satellite-400 !important;
+    }
+
+    a:visited {
+        color: $satellite-600 !important;
+
+    }
+
+    svg.d-icon {
+        color: $primary-200 !important;
+    }
+
+    a.d-breadcrumbs__link,
+    a.d-breadcrumbs__link:visited {
+        color: $primary-50 !important;
+    }
+
+    .user-metrics .table-cell .label {
+        color: $primary-100;
+    }
+
+    .directory-table__column-header {
+        color: $primary-100;
+    }
+
+    .admin-reports-list__report {
+        border: 1px solid $primary-200;
+        border-radius: $corner-md;
+
+        &:hover {
+            background-color: $primary-300;
+        }
+    }
+
+}
+
+.dashboard-next .dashboard-problems .actions {
+    color: $primary-100;
+}
