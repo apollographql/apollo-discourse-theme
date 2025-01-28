@@ -53,21 +53,23 @@
 
 
 
-    .user-detail {
-        .username {
-            color: $satellite-200;
-        }
 
-        .name {
-            color: $satellite-400;
-        }
-
-        .title {
-            color: $satellite-600;
-        }
-    }
 
     .total-rows {
         color: $primary-100 !important;
+    }
+}
+
+.user-detail {
+    .username {
+        color: $satellite-200;
+    }
+
+    .name {
+        color: $satellite-400;
+    }
+
+    .title {
+        color: $satellite-600;
     }
 }
