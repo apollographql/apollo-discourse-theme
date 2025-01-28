@@ -199,6 +199,13 @@
 }
 
 .user-card {
+    color: $satellite-400;
+
+    .user-field-name,
+    .user-field-value {
+        color: $satellite-600;
+    }
+
     .card-content {
 
         .names__primary {
@@ -208,6 +215,10 @@
                 color: $satellite-400;
             }
 
+        }
+
+        .names__secondary {
+            color: $satellite-600;
         }
     }
 
