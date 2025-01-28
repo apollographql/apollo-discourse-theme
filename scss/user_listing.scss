@@ -51,7 +51,12 @@
         color: $satellite-400 !important;
     }
 
+    .user-detail {
 
+        .title {
+            color: $satellite-600;
+        }
+    }
 
 
 
@@ -69,7 +74,7 @@
         color: $satellite-400;
     }
 
-    .title {
+    .details {
         color: $satellite-600;
     }
 }
