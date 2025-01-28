@@ -31,7 +31,7 @@
                                 query,
                                 params: {
                                     hitsPerPage: 4,
-                                    attributesToSnippet: ['raw:25'],
+                                    attributesToSnippet: ['cooked:25'],
                                     snippetEllipsisText: '…',
                                 },
                             },
@@ -46,7 +46,7 @@
                         return html`<div>
                             <a href="https://community.apollographql.com/t/${item.topic_slug}">
                                 <h3>${components.Highlight({ hit: item, attribute: 'topicTitle' })}</h3>
-                                <p>${components.Snippet({ hit: item, attribute: 'raw'})}</p>
+                                <p>${components.Snippet({ hit: item, attribute: 'cooked'})}</p>
                             </a>
                          </div>`;
                     },

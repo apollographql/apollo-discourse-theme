@@ -185,3 +185,9 @@ nav.post-controls .show-replies {
 .more-topics__browse-more {
     color: $satellite-400;
 }
+
+#topic-title {
+    .title-wrapper .topic-statuses .d-icon {
+        color: $primary-100;
+    }
+}
