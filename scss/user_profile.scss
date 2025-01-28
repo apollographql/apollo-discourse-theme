@@ -107,53 +107,105 @@
     }
 
     .user-notifications-list {
-        li.notification{
+        li.notification {
             border-bottom: 1px solid $primary-200;
-            a{
+
+            a {
                 color: $satellite-400;
-                &:visited{
+
+                &:visited {
                     color: $satellite-600;
                 }
             }
         }
-        .item-label{
+
+        .item-label {
             color: $primary-100;
             font-weight: 500;
         }
     }
+
     .user-navigation.user-navigation-secondary {
-        .navigation-controls .btn{
-border:none;
-border-radius: 0;
+        .navigation-controls .btn {
+            border: none;
+            border-radius: 0;
         }
     }
 
-    .username-preference__current-username{
+    .username-preference__current-username {
         color: $satellite-400;
     }
-    .control-label{
+
+    .control-label {
         color: $satellite-500;
     }
 
-    .d-editor-container{
+    .d-editor-container {
         background-color: $primary-600;
         border: 1px solid $primary-200;
-        .d-editor-button-bar{
+
+        .d-editor-button-bar {
             border-bottom: 1px solid $primary-200;
 
         }
-        .btn{
+
+        .btn {
             border-radius: 0;
         }
-        .d-editor-input{
+
+        .d-editor-input {
             color: $satellite-400;
         }
+
         .d-editor-preview-wrapper {
             border-top: 1px solid $primary-200;
         }
     }
 
     .uploaded-image-preview {
-background: $primary-300 center;
+        background: $primary-300 center;
+    }
+}
+
+.user-card {
+    .card-content {
+
+        .names__primary {
+
+            a,
+            .d-icon {
+                color: $satellite-400;
+            }
+
+        }
+    }
+
+    .metadata {
+        .desc {
+            color: $satellite-400;
+
+        }
+
+        color: $satellite-600;
+    }
+
+    .badge-section {
+        .user-card-badge-link .user-badge {
+            color: $satellite-400;
+            border-radius: $corner-md;
+            border: 1px solid $primary-300;
+
+            &:hover {
+                background-color: $primary-400;
+            }
+        }
+
+        .more-user-badges a {
+            color: $primary-50;
+
+            &:hover {
+                color: $primary-200;
+            }
+        }
     }
 }
