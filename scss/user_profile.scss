@@ -210,6 +210,10 @@
     .location-and-website {
         color: $primary-100;
 
+        a {
+            color: $primary-100;
+        }
+
         .location span,
         .user-card .location-and-website .website-name a {
             color: $primary-100;
