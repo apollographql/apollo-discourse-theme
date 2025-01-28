@@ -103,3 +103,11 @@ nav.post-controls .actions button {
         color: $satellite-500;
     }
 }
+
+.timeline-container .topic-timeline .timeline-scrollarea {
+    border-left: 1px solid $primary-50;
+
+    .timeline-handle {
+        background-color: $primary-50;
+    }
+}
