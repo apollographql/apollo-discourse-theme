@@ -1,9 +1,17 @@
-.login-page {
-    .login-body {
+.login-page,
+.signup-page {
+
+    .login-body,
+    .signup-body {
         color: $satellite-300;
 
         .btn {
-            color: $primary-700 !important;
+            color: $primary-600 !important;
+        }
+
+        #new-account-link {
+            color: $primary-100 !important;
+
         }
 
         .input-group label.alt-placeholder {
@@ -14,7 +22,8 @@
             background-color: $primary-600;
         }
 
-        .login-page-cta__no-account-yet {
+        .login-page-cta__no-account-yet,
+        .login__password-links {
             color: $satellite-500 !important;
 
         }
