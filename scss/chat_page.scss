@@ -232,14 +232,15 @@
 
     .chat-channel-row,
     .chat-channel-row:not(:last-of-type) {
-        border-bottom: 1px solid $primary-400;
+        border-bottom: 1px solid $primary-400 !important;
 
         &:hover {
-            background-color: $primary-400;
+            background-color: $primary-200;
         }
 
 
     }
+
 
     .c-footer__item {
 
