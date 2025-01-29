@@ -1,0 +1,10 @@
+.archetype-private_message {
+    .current-user-post .regular.contents {
+        background-color: $primary-400;
+        border-color: 1px solid $primary-200;
+    }
+}
+
+.private-message-glyph {
+    color: $primary-200;
+}
