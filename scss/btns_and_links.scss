@@ -124,3 +124,9 @@ input[type=color] {
         color: $satellite-600;
     }
 }
+
+.select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
+    background-color: $primary-600;
+    border: 1px solid $primary-200;
+    border-radius: $corner-md;
+}
