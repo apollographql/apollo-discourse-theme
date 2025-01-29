@@ -92,7 +92,7 @@ input[type=color] {
                         background-color: $primary-400;
                     }
 
-                    &:focus {
+                    &.-selected {
                         background-color: $primary-300;
                     }
 
@@ -113,4 +113,8 @@ input[type=color] {
         }
     }
 
+}
+
+.select-kit.single-select.dropdown-select-box .select-kit-row .texts .name {
+    color: $satellite-400;
 }
