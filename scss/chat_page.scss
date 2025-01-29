@@ -211,7 +211,7 @@
 
         .chat-composer__wrapper {
             border-top: 1px solid $primary-300;
-            background-color: $primary-600;
+            // background-color: $primary-00;
 
         }
 
@@ -219,6 +219,32 @@
             background-color: $primary-100;
             color: $primary-600;
             opacity: 0.8;
+        }
+    }
+
+    .chat-channel-divider {
+        color: $satellite-500;
+
+        button .btn-flat.d-icon {
+            color: $primary-100;
+        }
+    }
+
+    .chat-channel-row {
+        border-bottom: 1px solid $primary-400;
+
+        &:hover {
+            background-color: $primary-400;
+        }
+
+
+    }
+
+    .c-footer__item {
+
+        .d-icon,
+        .d-button-label {
+            color: $satellite-500;
         }
     }
 }
