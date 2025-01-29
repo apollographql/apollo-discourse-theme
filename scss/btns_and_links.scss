@@ -44,6 +44,14 @@ a.btn.btn-default {
     color: $horizon !important;
 }
 
+button.btn.btn-default,
+summary.btn.btn-default {
+    &:hover {
+        background-color: $primary-100;
+        color: $primary-700;
+    }
+}
+
 button.dismiss-btn {
     &:hover {
         background-color: $horizon;

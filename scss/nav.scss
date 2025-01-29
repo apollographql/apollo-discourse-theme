@@ -17,6 +17,11 @@ nav.post-controls .actions button {
         button {
             color: $text-color;
 
+            &:hover {
+                color: $satellite-200;
+                border-radius: $corner-xl;
+            }
+
             &.active {
                 color: #FFF;
                 font-weight: 600;
