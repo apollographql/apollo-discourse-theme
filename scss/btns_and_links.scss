@@ -116,5 +116,11 @@ input[type=color] {
 }
 
 .select-kit.single-select.dropdown-select-box .select-kit-row .texts .name {
-    color: $satellite-400;
+    .name {
+        color: $satellite-400;
+    }
+
+    .desc {
+        color: $satellite-600;
+    }
 }
