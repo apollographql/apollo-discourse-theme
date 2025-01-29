@@ -47,9 +47,14 @@ a.btn.btn-default {
 button.btn.btn-default,
 summary.btn.btn-default {
     &:hover {
-        background-color: $primary-100;
-        color: $primary-700;
+        background-color: $primary-300;
+        color: $satellite-400;
+
+        svg {
+            color: $satellite-400 !important;
+        }
     }
+
 }
 
 button.dismiss-btn {
