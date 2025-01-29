@@ -189,20 +189,36 @@
     color: $primary-100;
 }
 
-.chat-drawer .chat-drawer-container {
-    //background-color: $primary-600;
+.chat-drawer {
+    box-shadow: 0px 0px 15px 2px $primary-600;
 
-    .c-navbar-container {
-        background-color: $primary-400;
-        border-bottom: 1px solid $primary-300;
-    }
+    .chat-drawer-container {
+        //background-color: $primary-600;
 
-    border: 1px solid $primary-300;
-    border-top-left-radius: $corner-md;
-    border-top-right-radius: $corner-md;
-    color: $satellite-400;
+        .c-navbar-container {
+            background-color: $primary-400;
+            border-bottom: 1px solid $primary-300;
+        }
 
-    .chat-channel-name__label {
-        color: $satellite-600;
+        border: 1px solid $primary-300;
+        border-top-left-radius: $corner-md;
+        border-top-right-radius: $corner-md;
+        color: $satellite-400;
+
+        .chat-channel-name__label {
+            color: $satellite-600;
+        }
+
+        .chat-composer__wrapper {
+            border-top: 1px solid $primary-300;
+            background-color: $primary-600;
+
+        }
+
+        .chat-scroll-to-bottom__button.visible {
+            background-color: $primary-100;
+            color: $primary-600;
+            opacity: 0.8;
+        }
     }
 }
