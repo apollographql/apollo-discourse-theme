@@ -101,10 +101,17 @@ div.edit-category {
 
         span.topic-status svg.d-icon-far-square-check {
             fill: $aurora;
+            color: $aurora;
         }
     }
 
     span.number {
         color: $satellite-600;
     }
+}
+
+
+.topic-statuses .topic-status svg.d-icon-far-square-check {
+    fill: $aurora;
+    color: $aurora;
 }
