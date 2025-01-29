@@ -225,12 +225,13 @@
     .chat-channel-divider {
         color: $satellite-500;
 
-        button .btn-flat.d-icon {
+        button.btn-flat .d-icon {
             color: $primary-100;
         }
     }
 
-    .chat-channel-row {
+    .chat-channel-row,
+    .chat-channel-row:not(:last-of-type) {
         border-bottom: 1px solid $primary-400;
 
         &:hover {
@@ -245,6 +246,16 @@
         .d-icon,
         .d-button-label {
             color: $satellite-500;
+
+        }
+
+        &.--active {
+
+            .d-icon,
+            .d-button-label {
+                color: $primary-100;
+
+            }
         }
     }
 }
