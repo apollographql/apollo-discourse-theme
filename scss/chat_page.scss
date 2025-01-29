@@ -54,7 +54,7 @@
     }
 
     button {
-        svg {
+        svg.d-icon {
             color: $primary-200;
 
             &:hover {
@@ -190,7 +190,13 @@
 }
 
 .chat-drawer .chat-drawer-container {
-    background-color: $primary-600;
+    //background-color: $primary-600;
+
+    .c-navbar-container {
+        background-color: $primary-400;
+        border-bottom: 1px solid $primary-300;
+    }
+
     border: 1px solid $primary-300;
     border-top-left-radius: $corner-md;
     border-top-right-radius: $corner-md;
