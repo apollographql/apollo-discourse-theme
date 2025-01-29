@@ -1,75 +1,76 @@
-.main-chat-outlet {
-    .chat-notices {
-        .chat-retention-reminder {
-            color: $primary-50;
-        }
+//.main-chat-outlet {
+.chat-notices {
+    .chat-retention-reminder {
+        color: $primary-50;
     }
+}
 
-    .chat-channel-name {
-        color: $satellite-400;
-    }
+.chat-channel-name {
+    color: $satellite-400;
+}
 
-    .all-loaded-message {
+.all-loaded-message {
+    color: $primary-200;
+}
+
+.chat-message-separator-date+.chat-message-separator__line-container .chat-message-separator__line {
+    border-top: 1px solid $aurora;
+}
+
+.chat-user-avatar.is-online .avatar {
+    box-shadow: inset 0px 0px 0px 1px $aurora, inset 0px 0px 0px 2px $secondary;
+}
+
+.chat-message {
+    svg {
         color: $primary-200;
     }
 
-    .chat-message-separator-date+.chat-message-separator__line-container .chat-message-separator__line {
-        border-top: 1px solid $aurora;
+    &:hover {
+        background-color: $primary-300;
     }
 
-    .chat-user-avatar.is-online .avatar {
-        box-shadow: inset 0px 0px 0px 1px $aurora, inset 0px 0px 0px 2px $secondary;
+    .discourse-local-date {
+        color: $satellite-600;
+
+        svg {
+            color: $satellite-600;
+        }
     }
 
-    .chat-message {
+    .chat-message-reaction.reacted {
+        background-color: $primary-600;
+    }
+}
+
+.chat-composer__inner-container {
+    background-color: $primary-600;
+    border: 1px solid $primary-300;
+    border-radius: $corner-md;
+    color: $satellite-400;
+
+    textarea {
+        color: $satellite-400;
+    }
+
+    button {
         svg {
             color: $primary-200;
-        }
-
-        &:hover {
-            background-color: $primary-300;
-        }
-
-        .discourse-local-date {
-            color: $satellite-600;
-
-            svg {
-                color: $satellite-600;
-            }
-        }
-
-        .chat-message-reaction.reacted {
-            background-color: $primary-600;
-        }
-    }
-
-    .chat-composer__inner-container {
-        background-color: $primary-600;
-        border: 1px solid $primary-300;
-        border-radius: $corner-md;
-        color: $satellite-400;
-
-        textarea {
-            color: $satellite-400;
-        }
-
-        button {
-            svg {
-                color: $primary-200;
-
-                &:hover {
-                    background-color: $primary-50;
-                    color: $primary-500;
-                }
-            }
 
             &:hover {
                 background-color: $primary-50;
                 color: $primary-500;
             }
         }
+
+        &:hover {
+            background-color: $primary-50;
+            color: $primary-500;
+        }
     }
 }
+
+//}
 
 .chat-message-actions {
 
@@ -186,4 +187,16 @@
 
 .c-navbar__actions .d-icon {
     color: $primary-100;
+}
+
+.chat-drawer .chat-drawer-container {
+    background-color: $primary-600;
+    border: 1px solid $primary-300;
+    border-top-left-radius: $corner-md;
+    border-top-right-radius: $corner-md;
+    color: $satellite-400;
+
+    .chat-channel-name__label {
+        color: $satellite-600;
+    }
 }
