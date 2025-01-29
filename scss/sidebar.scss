@@ -23,6 +23,8 @@
 .sidebar-section-wrapper {
     border-bottom: 1px solid $primary-medium;
 
+
+
     .sidebar-section-header-caret .d-icon {
         color: $primary-100;
     }
@@ -40,8 +42,17 @@
 
 
 .sidebar-wrapper {
-    border-right: 1px solid $primary-medium;
+    &.collapsed {
+        display: none;
+    }
 
+    .sidebar-section-link {
+        &:hover {
+            background-color: $primary-400;
+        }
+    }
+
+    border-right: 1px solid $primary-medium;
     max-width: 300px;
 
     .sidebar-sections {

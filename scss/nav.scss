@@ -116,3 +116,21 @@ nav.post-controls .actions button {
         background-color: $primary-50;
     }
 }
+
+#custom-toggle-head {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+
+    color: $satellite-400;
+    background: none;
+    padding: 0.5rem;
+
+    &:hover {
+        color: $primary-50 !important;
+        background: $primary-300;
+    }
+
+}
