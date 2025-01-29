@@ -74,3 +74,35 @@ input[type=color] {
     background-color: $primary-600;
     border: 1px solid $primary-200;
 }
+
+#d-menu-portals {
+
+    .fk-d-menu__inner-content {
+        background-color: $primary-600;
+        border-radius: $corner-md;
+
+        .dropdown-menu {
+            background-color: $primary-600;
+
+            .dropdown-menu__item {
+                .notifications-tracking-btn {
+                    border-radius: 0;
+
+                    .notifications-tracking-btn__icons svg.d-icon {
+                        color: $satellite-600 !important;
+
+                    }
+
+                    .notifications-tracking-btn__label {
+                        color: $satellite-600;
+                    }
+
+                    .notifications-tracking-btn__description {
+                        color: $satellite-400;
+                    }
+                }
+            }
+        }
+    }
+
+}
