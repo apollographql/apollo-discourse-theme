@@ -143,3 +143,21 @@ input[type=color] {
     border: 1px solid $primary-200;
     border-radius: $corner-md;
 }
+
+.d-editor-container {
+    .d-editor-textarea-wrapper {
+        border: 1px solid $primary-300;
+    }
+
+    .d-editor-button-bar {
+        border-bottom: 1px solid $primary-300;
+
+        .btn.no-text.btn-icon svg.d-icon {
+            color: $satellite-600 !important;
+        }
+    }
+
+    textarea {
+        color: $satellite-400;
+    }
+}

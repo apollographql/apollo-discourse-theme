@@ -35,3 +35,22 @@
 
 
 }
+
+.badges .admin-container {
+    .content-list .admin-badge-list {
+        border: 1px solid $primary-300;
+
+    }
+}
+
+.admin-badges .current-badge-header svg.d-icon {
+    color: $primary-50 !important;
+}
+
+.user-badge {
+    color: $primary-50;
+}
+
+.readonly-field {
+    color: $satellite-600 !important;
+}

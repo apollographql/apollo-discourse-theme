@@ -123,3 +123,7 @@ body.has-sidebar-page .wrap {
     background-color: $primary-300;
     color: $satellite-300;
 }
+
+.content-list ul li {
+    border-bottom: 1px solid $primary-300;
+}

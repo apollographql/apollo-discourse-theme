@@ -33,3 +33,31 @@ input {
         border-bottom-left-radius: $corner-md;
     }
 }
+
+.form-kit__container-optional {
+    color: $satellite-600;
+}
+
+.form-kit__control-menu {
+    background: $primary-600;
+    border: 1px solid $primary-100;
+}
+
+.form-kit__control-select {
+    background: $primary-600;
+    border: 1px solid $primary-100;
+    border-radius: $corner-xl;
+}
+
+select[disabled] {
+    color: $satellite-600;
+    border-color: $primary-300;
+
+}
+
+.select-kit.multi-select .multi-select-header {
+    background: $primary-600;
+    border-color: $primary-100;
+    border-radius: $corner-xl;
+
+}
