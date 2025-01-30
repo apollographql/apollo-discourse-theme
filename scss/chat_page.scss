@@ -1,4 +1,29 @@
 //.main-chat-outlet {
+
+.c-header .c-heading {
+    color: $primary-100 !important;
+}
+
+.has-full-page-chat .c-header .back-to-forum {
+    color: $primary-100 !important;
+
+    svg.d-icon {
+        color: $primary-100 !important
+    }
+}
+
+.chat-channel .all-loaded-message {
+    color: $primary-100;
+}
+
+.chat-composer-dropdown__trigger-btn .d-icon {
+    color: $primary-100 !important;
+}
+
+.chat-composer-button .d-icon {
+    color: $primary-100 !important;
+}
+
 .chat-notices {
     .chat-retention-reminder {
         color: $primary-50;
