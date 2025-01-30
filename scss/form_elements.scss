@@ -61,3 +61,16 @@ select[disabled] {
     border-radius: $corner-xl;
 
 }
+
+.select-kit.dropdown-select-box.notifications-filter .notifications-filter-header {
+    border-color: $primary-200;
+    padding: .4rem .8rem;
+
+    .filter-text {
+        color: $satellite-600;
+    }
+
+    .d-icon {
+        color: $satellite-700;
+    }
+}

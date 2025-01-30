@@ -2,6 +2,15 @@
 
 .user-main {
 
+    .about .primary {
+        color: $satellite-500 ;
+
+    }
+
+    .user-profile-names__secondary {
+        color: $satellite-600 !important;
+
+    }
 
     .alert.alert-error {
         background-color: $primary-600;
