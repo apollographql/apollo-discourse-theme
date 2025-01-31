@@ -161,3 +161,14 @@ input[type=color] {
         color: $satellite-400;
     }
 }
+
+.dropdown-menu__item {
+    button.btn {
+        border-radius: 0;
+
+        &:hover {
+            background-color: $primary-300;
+            color: $satellite-400;
+        }
+    }
+}
