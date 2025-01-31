@@ -170,5 +170,10 @@ input[type=color] {
             background-color: $primary-300;
             color: $satellite-400;
         }
+
+        &:focus {
+            background-color: $primary-400;
+            color: $satellite-400;
+        }
     }
 }
