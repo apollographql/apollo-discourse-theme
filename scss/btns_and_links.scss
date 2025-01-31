@@ -177,3 +177,8 @@ input[type=color] {
         }
     }
 }
+
+.discourse-no-touch .btn:hover {
+    background-color: $primary-300;
+    color: $satellite-400;
+}
