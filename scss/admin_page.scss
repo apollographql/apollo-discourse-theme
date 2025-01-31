@@ -73,3 +73,7 @@
 .admin-customize .themes-list-container__item .inner-wrapper {
     color: $satellite-500 !important;
 }
+
+.admin-customize .themes-list-container__item.inactive-indicator span.empty {
+    color: $satellite-600 !important;
+}
