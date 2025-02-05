@@ -17,9 +17,31 @@
         }
     }
 
-
 }
 
 #event-popover {
     background-color: $primary-300;
+}
+
+.discourse-post-event {
+
+    .event-info .status-and-creators {
+        color: $primary-100;
+    }
+
+    .event-invitees-icon .going {
+        color: $aurora;
+    }
+
+    .discourse-post-event-widget {
+        box-shadow: 0px 0px 4px 3px var(--primary-600);
+        border: 2px solid var(--primary-300);
+        background: var(--primary-600);
+        border-radius: $corner-md;
+    }
+
+}
+
+.event-dates .discourse-local-date.cooked-date {
+    color: $primary-100;
 }
