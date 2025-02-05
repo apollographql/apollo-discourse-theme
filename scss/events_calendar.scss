@@ -1,0 +1,26 @@
+#upcoming-events-calendar {
+    .fc-unthemed {
+        td {
+            border-color: $primary-300 ;
+        }
+
+        .fc-button {
+            color: $primary-100;
+        }
+
+        .fc-today {
+            background-color: $aurora;
+            color: white;
+        }
+    }
+
+
+
+    .fc-unthemed .fc-today:after {
+        border-color: $primary-100;
+    }
+}
+
+#event-popover {
+    background-color: $primary-200;
+}
