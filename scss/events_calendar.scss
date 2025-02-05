@@ -4,14 +4,21 @@
         border-color: $primary-300 ;
     }
 
-    .fc-button {
-        color: $primary-100;
+    .fc-bg td.fc-today {
+        border-color: $primary-300 ;
+        background-color: $aurora;
+        color: $primary-600;
     }
 
-    .fc-today {
-        background-color: $aurora;
-        color: white;
+    .fc-button {
+        color: $primary-50;
+
+        &:hover {
+            background: $primary-600;
+            color: $primary-100;
+        }
     }
+
 
 }
 
