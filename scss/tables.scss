@@ -1,0 +1,77 @@
+.md-table {
+    table {
+        border: 1px solid $primary-300;
+        color: $satellite-200 !important;
+        border-radius: $corner-md;
+        border-collapse: separate; // Important for border-radius to work
+        border-spacing: 0;
+        overflow: hidden;
+
+        // Common border styles
+        tr {
+            border-bottom: 1px solid $primary-300;
+
+            &:last-child {
+                border-bottom: none;
+
+                td {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        th,
+        td {
+            border-right: 1px solid $primary-300;
+            color: $satellite-200 !important;
+            border-bottom: 1px solid $primary-300;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            a.mention {
+                color: $primary-50;
+                background-color: $primary-400;
+            }
+
+        }
+
+        // Header styles
+        thead tr {
+
+            th {
+                background-color: $primary-400;
+                font-family: 'Aeonik-Medium', sans-serif;
+                font-size: 1.1em;
+                padding: 6px 12px !important;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+        }
+
+        // Body styles
+        tbody {
+            border-top: 2px solid $primary-300;
+
+            tr:nth-child(odd) {
+                background-color: $primary-600;
+            }
+
+            tr:nth-child(even) {
+                background-color: $primary-500;
+            }
+        }
+    }
+}
+
+table.jexcel{
+    color: $satellite-200 !important;
+    td{
+        color: $satellite-300 !important;
+        border-bottom:  1px solid  $primary-200;
+
+    }
+   border-bottom:  1px solid  $primary-200;
+
+}
