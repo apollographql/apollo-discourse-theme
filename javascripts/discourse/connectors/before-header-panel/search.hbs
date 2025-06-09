@@ -19,9 +19,6 @@
         placeholder: 'Search Apollo documentation, definitions, tutorials and more',
         insights: true,
         detachedMediaQuery: 'none',
-        shouldPanelOpen({ query }) {
-            return query.length > 0;
-        },
         onSubmit({ event, setIsOpen }) {
             event.preventDefault();
             setIsOpen(true);
