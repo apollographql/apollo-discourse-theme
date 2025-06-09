@@ -20,6 +20,28 @@
         insights: true,
         detachedMediaQuery: 'none',
         defaultActiveItemId: 0,
+        onSelect({ item, event, source }) {
+            const url = source.getItemUrl({ item });
+            if (!url) {
+                return
+            };
+            try {
+                const urlObj = new URL(url, window.location.origin);
+                const currentDomain = window.location.hostname;
+                const targetDomain = urlObj.hostname;
+                
+                if (currentDomain === targetDomain) {
+                    // Same domain - navigate in current tab
+                    window.location.href = url;
+                } else {
+                    // Different domain - open in new tab
+                    window.open(url, '_blank');
+                }
+            } catch (e) {
+                // If URL parsing fails, fallback to current tab
+                window.location.href = url;
+            }
+        },
         getSources({ query }) {
             return [{
                 sourceId: 'discourse',
