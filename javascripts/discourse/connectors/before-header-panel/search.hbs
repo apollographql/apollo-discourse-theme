@@ -39,16 +39,23 @@
                 window.open(url.href, '_blank');
             }
         },
-        onSelect({ item, event }) {
-            console.log('onSelect', item, event);
+        onSelect({ item, event, source }) {
+            console.log('onSelect', item, event, source);
             event.preventDefault();
 
-            const url = new URL(item.url, window.location.origin);
-
-            if (url.hostname === window.location.hostname) {
-                window.location.href = url.href;
+            let url;
+            if (source.sourceId === 'discourse') {
+                url = `https://community.apollographql.com/t/${item.topic_slug}`;
             } else {
-                window.open(url.href, '_blank');
+                url = item.url;
+            }
+
+            const fullUrl = new URL(url, window.location.origin);
+
+            if (fullUrl.hostname === window.location.hostname) {
+                window.location.href = fullUrl.href;
+            } else {
+                window.open(fullUrl.href, '_blank');
             }
         },
         getSources({ query }) {
@@ -75,11 +82,14 @@
                         return html`<h2>Discourse Topics</h2>`;
                     },
                     item({ item, components, html }) {
-                        return html`<div class="aa-item" data-url="https://community.apollographql.com/t/${item.topic_slug}">
+                        return html`<div class="aa-item">
                                 <h3>${components.Highlight({ hit: item, attribute: 'topicTitle' })}</h3>
                                 <p>${components.Snippet({ hit: item, attribute: 'cooked'})}</p>
                          </div>`;
                     },
+                },
+                getItemUrl({ item }) {
+                    return `https://community.apollographql.com/t/${item.topic_slug}`;
                 },
             },
             {
@@ -105,7 +115,7 @@
                         return html`<h2>Documentation</h2>`;
                     },
                     item({ item, components, html }) {
-                        return html`<div class="aa-item" data-url="${item.url}">
+                        return html`<div class="aa-item">
                                 <h3>${components.Highlight({ hit: item, attribute: 'title', })}</h3>
                                 <p>${components.Snippet({ hit: item, attribute: 'text', })}</p>
                          </div>`;
@@ -113,6 +123,9 @@
                     noResults() {
                         return "Sorry, we couldn't find any result for your search.";
                     },
+                },
+                getItemUrl({ item }) {
+                    return item.url;
                 },
             },
             {
@@ -137,11 +150,14 @@
                         return html`<h2>Definitions</h2>`;
                     },
                     item({ item, components, html }) {
-                        return html`<div class="aa-item" data-url="${item.url}">
+                        return html`<div class="aa-item">
                                 <h3>${components.Highlight({ hit: item, attribute: 'term', })}</h3>
                                 <p>${components.Snippet({ hit: item, attribute: 'text', })}</p>
                          </div>`;
                     },
+                },
+                getItemUrl({ item }) {
+                    return item.url;
                 },
             },
             ];
