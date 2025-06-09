@@ -22,6 +22,7 @@
         onSubmit({ state, event, setIsOpen }) {
             event.preventDefault();
             setIsOpen(true);
+            console.log('onSubmit', state);
         },
         getSources({ query }) {
             return [{
