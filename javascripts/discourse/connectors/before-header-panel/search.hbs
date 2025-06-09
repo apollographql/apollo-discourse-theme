@@ -22,6 +22,7 @@
         defaultActiveItemId: 0,
         onSubmit({state, event}) {
             const item = state.collections[0]?.items[state.activeItemId];
+            console.log(state)
             if (!item) {
                 return;
             }
