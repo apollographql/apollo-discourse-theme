@@ -21,6 +21,7 @@
         detachedMediaQuery: 'none',
         defaultActiveItemId: 0,
         onSubmit({state, event}) {
+            console.log('onSubmit', state, event);
             event.preventDefault();
 
             const allItems = state.collections.flatMap((collection) => collection.items);
@@ -39,6 +40,7 @@
             }
         },
         onSelect({ item, event }) {
+            console.log('onSelect', item, event);
             event.preventDefault();
 
             const url = new URL(item.url, window.location.origin);
