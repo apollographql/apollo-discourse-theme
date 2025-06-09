@@ -24,6 +24,12 @@
             setIsOpen(true);
             console.log('onSubmit', state);
         },
+        onKeyDown({ state, event, setIsOpen }) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                setIsOpen(true);
+            }
+        },
         getSources({ query }) {
             return [{
                 sourceId: 'discourse',
