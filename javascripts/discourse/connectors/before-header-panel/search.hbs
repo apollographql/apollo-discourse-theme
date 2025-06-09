@@ -19,11 +19,10 @@
         placeholder: 'Search Apollo documentation, definitions, tutorials and more',
         insights: true,
         detachedMediaQuery: 'none',
+        defaultActiveItemId: 0,
         onSubmit({state, event}) {
-            console.log('onSubmit', state, event);
             event.preventDefault();
 
-            // Flatten all items from all collections
             const allItems = state.collections.flatMap((collection) => collection.items);
             const item = allItems[state.activeItemId];
 
@@ -33,7 +32,17 @@
 
             const url = new URL(item.url, window.location.origin);
 
-            // If the URL is on the same host, use same tab
+            if (url.hostname === window.location.hostname) {
+                window.location.href = url.href;
+            } else {
+                window.open(url.href, '_blank');
+            }
+        },
+        onSelect({ item, event }) {
+            event.preventDefault();
+
+            const url = new URL(item.url, window.location.origin);
+
             if (url.hostname === window.location.hostname) {
                 window.location.href = url.href;
             } else {
