@@ -19,12 +19,20 @@
         placeholder: 'Search Apollo documentation, definitions, tutorials and more',
         insights: true,
         detachedMediaQuery: 'none',
-        onSubmit({ event, setIsOpen }) {
+        defaultActiveItemId: 0,
+        onSubmit({state, event}) {
+            const item = state.collections[0]?.items[state.activeItemId];
+            if (!item) {
+                return;
+            }
             event.preventDefault();
-            setIsOpen(true);
-        },
-        onSelect({ setIsOpen }) {
-            setIsOpen(true);
+            const url = new URL(item.url, window.location.origin);
+            // If the url is on the community site, keep in the same tab
+            if (url.hostname === window.location.hostname) {
+                window.location.href = url.href;
+                return;
+            }
+            window.open(url.href, '_blank');
         },
         getSources({ query }) {
             return [{
