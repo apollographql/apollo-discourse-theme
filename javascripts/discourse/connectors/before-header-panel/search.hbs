@@ -45,7 +45,7 @@
                     },
                     item({ item, components, html }) {
                         const url = `https://community.apollographql.com/t/${item.topic_slug}`;
-                        return html`<a href="${url}" target="_blank" class="aa-item">
+                        return html`<a href="${url}" class="aa-item">
                                 <h3>${components.Highlight({ hit: item, attribute: 'topicTitle' })}</h3>
                                 <p>${components.Snippet({ hit: item, attribute: 'cooked'})}</p>
                          </a>`;
@@ -78,7 +78,7 @@
                         return html`<h2>Documentation</h2>`;
                     },
                     item({ item, components, html }) {
-                        return html`<a href="${item.url}" class="aa-item">
+                        return html`<a href="${item.url}" target="_blank" class="aa-item">
                                 <h3>${components.Highlight({ hit: item, attribute: 'title', })}</h3>
                                 <p>${components.Snippet({ hit: item, attribute: 'text', })}</p>
                          </a>`;
