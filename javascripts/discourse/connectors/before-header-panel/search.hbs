@@ -20,44 +20,6 @@
         insights: true,
         detachedMediaQuery: 'none',
         defaultActiveItemId: 0,
-        onSubmit({state, event}) {
-            console.log('onSubmit', state, event);
-            event.preventDefault();
-
-            const allItems = state.collections.flatMap((collection) => collection.items);
-            const item = allItems[state.activeItemId];
-
-            if (!item) {
-                return;
-            }
-
-            const url = new URL(item.url, window.location.origin);
-
-            if (url.hostname === window.location.hostname) {
-                window.location.href = url.href;
-            } else {
-                window.open(url.href, '_blank');
-            }
-        },
-        onSelect({ item, event, source }) {
-            console.log('onSelect', item, event, source);
-            event.preventDefault();
-
-            let url;
-            if (source.sourceId === 'discourse') {
-                url = `https://community.apollographql.com/t/${item.topic_slug}`;
-            } else {
-                url = item.url;
-            }
-
-            const fullUrl = new URL(url, window.location.origin);
-
-            if (fullUrl.hostname === window.location.hostname) {
-                window.location.href = fullUrl.href;
-            } else {
-                window.open(fullUrl.href, '_blank');
-            }
-        },
         getSources({ query }) {
             return [{
                 sourceId: 'discourse',
