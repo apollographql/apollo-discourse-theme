@@ -1,4 +1,4 @@
-<form><div id="autocomplete" ></div></form>
+<div id="autocomplete" ></div>
 <div id="autocomplete-panel-container"></div>
 
 
@@ -21,6 +21,7 @@
         detachedMediaQuery: 'none',
         defaultActiveItemId: 0,
         onSubmit({state, event}) {
+            console.log('onSubmit', state, event);
             event.preventDefault();
 
             // Flatten all items from all collections
