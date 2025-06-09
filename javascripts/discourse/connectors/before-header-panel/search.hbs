@@ -22,7 +22,7 @@
         shouldPanelOpen({ query }) {
             return query.length > 0;
         },
-        onSubmit({ event }) {
+        onSubmit({ event, setIsOpen }) {
             event.preventDefault();
             setIsOpen(true);
         },
