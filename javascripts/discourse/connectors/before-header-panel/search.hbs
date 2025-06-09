@@ -19,11 +19,15 @@
         placeholder: 'Search Apollo documentation, definitions, tutorials and more',
         insights: true,
         detachedMediaQuery: 'none',
+        shouldPanelOpen({ query }) {
+            return query.length > 0;
+        },
         onSubmit({ event }) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault();
+            setIsOpen(true);
         },
         onSelect({ setIsOpen }) {
-            setIsOpen(true); // Reopen panel after selection
+            setIsOpen(true);
         },
         getSources({ query }) {
             return [{
