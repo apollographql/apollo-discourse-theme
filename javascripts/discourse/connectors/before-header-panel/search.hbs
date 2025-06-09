@@ -19,6 +19,10 @@
         placeholder: 'Search Apollo documentation, definitions, tutorials and more',
         insights: true,
         detachedMediaQuery: 'none',
+        onSubmit({ state }) {
+            // Prevent the panel from closing when Enter is pressed
+            // This overrides the default behavior of closing the panel on submit
+        },
         getSources({ query }) {
             return [{
                 sourceId: 'discourse',
@@ -30,7 +34,7 @@
                                 indexName: 'discourse',
                                 query,
                                 params: {
-                                    hitsPerPage: 4,
+                                    hitsPerPage: 6,
                                     attributesToSnippet: ['cooked:25'],
                                     snippetEllipsisText: '…',
                                 },
