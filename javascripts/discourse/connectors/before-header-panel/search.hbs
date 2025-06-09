@@ -1,4 +1,4 @@
-<div id="autocomplete" ></div>
+<form><div id="autocomplete" ></div></form>
 <div id="autocomplete-panel-container"></div>
 
 
@@ -21,19 +21,24 @@
         detachedMediaQuery: 'none',
         defaultActiveItemId: 0,
         onSubmit({state, event}) {
-            const item = state.collections[0]?.items[state.activeItemId];
-            console.log(state)
+            event.preventDefault();
+
+            // Flatten all items from all collections
+            const allItems = state.collections.flatMap((collection) => collection.items);
+            const item = allItems[state.activeItemId];
+
             if (!item) {
                 return;
             }
-            event.preventDefault();
+
             const url = new URL(item.url, window.location.origin);
-            // If the url is on the community site, keep in the same tab
+
+            // If the URL is on the same host, use same tab
             if (url.hostname === window.location.hostname) {
                 window.location.href = url.href;
-                return;
+            } else {
+                window.open(url.href, '_blank');
             }
-            window.open(url.href, '_blank');
         },
         getSources({ query }) {
             return [{
