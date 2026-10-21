@@ -1,7 +1,7 @@
 .admin-nav {
   .nav-stacked {
     a.active {
-      color: $primary-high;
+      color: $nebula-50;
     }
   }
 }
@@ -26,12 +26,12 @@ nav.post-controls .actions button {
         font-weight: 600;
 
         .d-icon {
-          color: $primary-50;
+          color: $nebula-50;
         }
 
         &:after {
           height: 4px;
-          background-color: $primary-50;
+          background-color: $nebula-50;
         }
       }
     }
@@ -39,7 +39,7 @@ nav.post-controls .actions button {
 }
 
 .more-topics__container .nav li .btn .d-button-label {
-  color: $primary-100 !important;
+  color: $nebula-100 !important;
 }
 
 .select-kit {
@@ -50,10 +50,10 @@ nav.post-controls .actions button {
 
   &.combo-box {
     .select-kit-header {
-      border: 1px solid $primary-50 !important;
+      border: 1px solid $nebula-50 !important;
 
       &:hover {
-        background-color: $primary-300;
+        background-color: $nebula-300;
       }
 
       .select-kit-header-wrapper > div,
@@ -65,9 +65,9 @@ nav.post-controls .actions button {
 
   &.is-expanded {
     .select-kit-body {
-      border: 1px solid $primary-200;
+      border: 1px solid $nebula-200;
       border-radius: $corner-md;
-      background-color: $primary-600;
+      background-color: $nebula-600;
       margin: 0.5rem 0 0 0 !important;
       padding: 0.5rem;
     }
@@ -77,10 +77,10 @@ nav.post-controls .actions button {
     &.is-expanded .select-kit-header:not(.btn),
     .select-kit-header:not(.btn):focus,
     .select-kit-header:not(.btn):active {
-      outline: 1px solid $primary-200;
+      outline: 1px solid $nebula-200;
       border: none;
       outline-offset: -1px;
-      background-color: $primary-600;
+      background-color: $nebula-600;
     }
   }
 }
@@ -94,7 +94,7 @@ nav.post-controls .actions button {
 }
 
 .select-kit.combo-box.category-drop .select-kit-row .topic-count {
-  color: $primary-200;
+  color: $nebula-200;
 }
 
 .badge-category__wrapper {
@@ -104,10 +104,10 @@ nav.post-controls .actions button {
 }
 
 .timeline-container .topic-timeline .timeline-scrollarea {
-  border-left: 1px solid $primary-50;
+  border-left: 1px solid $nebula-50;
 
   .timeline-handle {
-    background-color: $primary-50;
+    background-color: $nebula-50;
   }
 }
 
@@ -124,7 +124,7 @@ nav.post-controls .actions button {
   padding: 0.5rem;
 
   &:hover {
-    color: $primary-50 !important;
-    background: $primary-300;
+    color: $nebula-50 !important;
+    background: $nebula-300;
   }
 }

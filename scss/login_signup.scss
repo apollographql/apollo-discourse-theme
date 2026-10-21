@@ -1,8 +1,8 @@
 .login-page,
 .signup-page {
   .d-header {
-    background-color: $primary-600 !important;
-    border-bottom: 1px solid $primary-300 !important;
+    background-color: $nebula-600 !important;
+    border-bottom: 1px solid $nebula-300 !important;
   }
 
   #main-outlet-wrapper {
@@ -15,7 +15,7 @@
     color: $satellite-300;
 
     .btn {
-      color: $primary-600 !important;
+      color: $nebula-600 !important;
     }
 
     .signup-progress-bar__circle {
@@ -23,19 +23,19 @@
     }
 
     #new-account-link {
-      color: $primary-100 !important;
+      color: $nebula-100 !important;
     }
 
     .input-group label.alt-placeholder {
-      color: $primary-200;
+      color: $nebula-200;
     }
 
     input {
-      background-color: $primary-600;
+      background-color: $nebula-600;
     }
 
     .signup-page-cta__existing-account {
-      color: $primary-100 !important;
+      color: $nebula-100 !important;
     }
 
     .signup-page-cta__disclaimer {
@@ -47,12 +47,12 @@
     }
 
     label.alt-placeholder {
-      color: $primary-200 !important;
+      color: $nebula-200 !important;
     }
 
     .instructions,
     .create-account-email .more-info {
-      color: $primary-100;
+      color: $nebula-100;
     }
 
     .login-page-cta__no-account-yet,

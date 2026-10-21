@@ -5,7 +5,7 @@
 
 #topic-footer-buttons {
   .btn-icon-text:hover {
-    background-color: $primary-200;
+    background-color: $nebula-200;
   }
 }
 
@@ -25,13 +25,13 @@ button.widget-button {
     }
 
     &.d-hover > svg {
-      color: $primary-50 !important;
+      color: $nebula-50 !important;
     }
   }
 }
 
 a.btn.btn-default {
-  color: $primary-100;
+  color: $nebula-100;
 }
 
 .like-count,
@@ -43,7 +43,7 @@ a.btn.btn-default {
 button.btn.btn-default,
 summary.btn.btn-default {
   &:hover {
-    background-color: $primary-300;
+    background-color: $nebula-300;
     color: $satellite-400;
 
     svg {
@@ -55,10 +55,10 @@ summary.btn.btn-default {
 button.dismiss-btn {
   &:hover {
     background-color: $horizon;
-    color: $primary-700;
+    color: $nebula-700;
 
     svg {
-      fill: $primary-700;
+      fill: $nebula-700;
     }
   }
 }
@@ -78,28 +78,28 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
   color: $satellite-400;
-  background-color: $primary-600;
-  border: 1px solid $primary-200;
+  background-color: $nebula-600;
+  border: 1px solid $nebula-200;
 }
 
 #d-menu-portals {
   .fk-d-menu__inner-content {
-    background-color: $primary-600;
+    background-color: $nebula-600;
     border-radius: $corner-md;
 
     .dropdown-menu {
-      background-color: $primary-600;
+      background-color: $nebula-600;
 
       .dropdown-menu__item {
         .notifications-tracking-btn {
           border-radius: 0;
 
           &:hover {
-            background-color: $primary-400;
+            background-color: $nebula-400;
           }
 
           &.-selected {
-            background-color: $primary-300;
+            background-color: $nebula-300;
           }
 
           .notifications-tracking-btn__icons svg.d-icon {
@@ -130,18 +130,18 @@ input[type="color"] {
 }
 
 .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
-  background-color: $primary-600;
-  border: 1px solid $primary-200;
+  background-color: $nebula-600;
+  border: 1px solid $nebula-200;
   border-radius: $corner-md;
 }
 
 .d-editor-container {
   .d-editor-textarea-wrapper {
-    border: 1px solid $primary-300;
+    border: 1px solid $nebula-300;
   }
 
   .d-editor-button-bar {
-    border-bottom: 1px solid $primary-300;
+    border-bottom: 1px solid $nebula-300;
 
     .btn.no-text.btn-icon svg.d-icon {
       color: $satellite-600 !important;
@@ -158,18 +158,18 @@ input[type="color"] {
     border-radius: 0;
 
     &:hover {
-      background-color: $primary-300;
+      background-color: $nebula-300;
       color: $satellite-400;
     }
 
     &:focus {
-      background-color: $primary-400;
+      background-color: $nebula-400;
       color: $satellite-400;
     }
   }
 }
 
 .discourse-no-touch .btn:hover {
-  background-color: $primary-300;
+  background-color: $nebula-300;
   color: $satellite-400;
 }

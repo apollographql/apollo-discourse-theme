@@ -6,12 +6,12 @@ input {
   color: $satellite-600;
 
   &[type="text"] {
-    border: 1px solid $primary-200;
+    border: 1px solid $nebula-200;
     outline: none;
     border-radius: 0;
 
     &:focus {
-      border: 1px solid $primary-50;
+      border: 1px solid $nebula-50;
     }
 
     &:not(.hex-input) {
@@ -20,14 +20,14 @@ input {
   }
 
   &.hex-input {
-    border: 1px solid $primary-200;
+    border: 1px solid $nebula-200;
     color: $satellite-600;
   }
 }
 
 .color-picker {
   .add-on {
-    border: 1px solid $primary-200;
+    border: 1px solid $nebula-200;
     border-right: none;
     border-top-left-radius: $corner-md;
     border-bottom-left-radius: $corner-md;
@@ -39,30 +39,30 @@ input {
 }
 
 .form-kit__control-menu {
-  background: $primary-600;
-  border: 1px solid $primary-100;
+  background: $nebula-600;
+  border: 1px solid $nebula-100;
 }
 
 .form-kit__control-select {
-  background: $primary-600;
-  border: 1px solid $primary-100;
+  background: $nebula-600;
+  border: 1px solid $nebula-100;
   border-radius: $corner-xl;
 }
 
 select[disabled] {
   color: $satellite-600;
-  border-color: $primary-300;
+  border-color: $nebula-300;
 }
 
 .select-kit.multi-select .multi-select-header {
-  background: $primary-600;
-  border-color: $primary-100;
+  background: $nebula-600;
+  border-color: $nebula-100;
   border-radius: $corner-xl;
 }
 
 .select-kit.dropdown-select-box.notifications-filter
   .notifications-filter-header {
-  border-color: $primary-200;
+  border-color: $nebula-200;
   padding: 0.4rem 0.8rem;
 
   .filter-text {

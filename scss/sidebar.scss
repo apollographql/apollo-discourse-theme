@@ -11,20 +11,20 @@
     }
 
     &.icon {
-      color: $primary-100;
+      color: $nebula-100;
     }
   }
 
   .sidebar-section-link.active .sidebar-section-link-prefix.icon {
-    color: $primary-50;
+    color: $nebula-50;
   }
 }
 
 .sidebar-section-wrapper {
-  border-bottom: 1px solid $primary-medium;
+  border-bottom: 1px solid $nebula-300;
 
   .sidebar-section-header-caret .d-icon {
-    color: $primary-100;
+    color: $nebula-100;
   }
 
   .sidebar-section-header {
@@ -44,11 +44,11 @@
 
   .sidebar-section-link {
     &:hover {
-      background-color: $primary-400;
+      background-color: $nebula-400;
     }
   }
 
-  border-right: 1px solid $primary-medium;
+  border-right: 1px solid $nebula-300;
   max-width: 300px;
 
   .sidebar-sections {
@@ -70,24 +70,24 @@
   }
 
   .sidebar-footer-actions-button.btn .d-icon {
-    color: $primary-200;
+    color: $nebula-200;
   }
 }
 
 .admin-area .sidebar-wrapper .admin-panel {
-  background-color: $primary-500;
+  background-color: $nebula-500;
 }
 
 .sidebar-wrapper .sidebar-sections__back-to-forum svg {
-  color: $primary-100;
+  color: $nebula-100;
 }
 
 .sidebar-filter__input-container {
-  background: $primary-600;
+  background: $nebula-600;
 }
 
 .sidebar-section-link-wrapper
   .sidebar-section-link
   .sidebar-section-link-content-badge {
-  color: $primary-50;
+  color: $nebula-50;
 }
