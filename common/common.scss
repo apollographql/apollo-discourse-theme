@@ -55,10 +55,10 @@ body {
 }
 
 a {
-  color: $primary-50;
+  color: $nebula-50;
 
   &:visited {
-    color: $primary-200;
+    color: $nebula-200;
   }
 }
 
@@ -82,10 +82,10 @@ table th {
 body:not(.ios-safari-composer-hacks) #reply-control.open,
 .open .grippie {
   border-radius: $corner-md $corner-md 0 0;
-  color: $primary-50;
+  color: $nebula-50;
 
   &:before {
-    border-top: 3px double $primary-200;
+    border-top: 3px double $nebula-200;
   }
 }
 
@@ -108,7 +108,7 @@ body.has-sidebar-page .wrap {
 }
 
 #banner button {
-  color: $primary-200;
+  color: $nebula-200;
 }
 
 .settings .setting .desc {
@@ -121,10 +121,16 @@ body.has-sidebar-page .wrap {
 
 .alert.alert-info,
 .post-notice {
-  background-color: $primary-300;
+  background-color: $nebula-300;
   color: $satellite-300;
 }
 
 .content-list ul li {
-  border-bottom: 1px solid $primary-300;
+  border-bottom: 1px solid $nebula-300;
+}
+
+// Set here, not in color_definitions — core redefines --d-* vars after that sheet loads.
+// Core derives this from $success (aurora), which is far too loud on navy.
+:root {
+  --d-unread-notification-background: #{$nebula-300};
 }

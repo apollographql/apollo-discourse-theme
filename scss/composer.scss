@@ -1,21 +1,21 @@
 #reply-control {
   .reply-to {
     .reply-details .d-icon {
-      color: $primary-200;
+      color: $nebula-200;
     }
 
     .composer-action-title .topic-link {
-      color: $primary-50;
+      color: $nebula-50;
     }
   }
 
   .d-editor-container {
     .d-editor-textarea-wrapper {
-      border: 1px solid $primary-300;
+      border: 1px solid $nebula-300;
     }
 
     .d-editor-button-bar {
-      border-bottom: 1px solid $primary-300;
+      border-bottom: 1px solid $nebula-300;
 
       .btn.no-text {
         color: $satellite-600;
@@ -28,26 +28,26 @@
   }
 
   .composer-popup .btn.close {
-    color: $primary-100;
+    color: $nebula-100;
   }
 
   .composer-controls button .d-icon {
-    color: $primary-200;
+    color: $nebula-200;
   }
 
   .toggle-preview .d-icon {
-    color: $primary-200;
+    color: $nebula-200;
   }
 
   .d-editor-preview {
     color: $satellite-100;
-    border: 1px solid $primary-300;
+    border: 1px solid $nebula-300;
     padding: 8px;
-    background-color: $primary-600;
+    background-color: $nebula-600;
 
     &::before {
       content: "Preview";
-      color: $primary-100;
+      color: $nebula-100;
     }
   }
 }

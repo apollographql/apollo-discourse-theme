@@ -43,8 +43,8 @@
   padding: 10px 10px;
   font-size: 16px;
   color: $satellite-600;
-  background-color: $primary-600;
-  border: solid 1px $primary-300;
+  background-color: $nebula-600;
+  border: solid 1px $nebula-300;
   box-shadow: none;
   margin-bottom: 0px;
 
@@ -52,7 +52,7 @@
   &:active {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    border: solid 2px $primary-100;
+    border: solid 2px $nebula-100;
   }
 }
 
@@ -65,12 +65,12 @@
   overflow-y: scroll;
   border-bottom-left-radius: $corner-md;
   border-bottom-right-radius: $corner-md;
-  border: 1px solid $primary-300;
+  border: 1px solid $nebula-300;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
 }
 
 mark {
-  background-color: $primary-300;
+  background-color: $nebula-300;
   color: $satellite-300;
 }
 
@@ -84,8 +84,8 @@ p mark {
 
 .aa-SourceHeader {
   margin: 0 !important;
-  background-color: $primary-400 !important;
-  color: $primary-50;
+  background-color: $nebula-400 !important;
+  color: $nebula-50;
 
   h2 {
     font-family: "Aeonik-Medium", sans-serif;
@@ -107,10 +107,10 @@ ul.aa-List {
 
 .aa-Item {
   padding: 8px 12px !important;
-  border-bottom: $primary-300 1px solid;
+  border-bottom: $nebula-300 1px solid;
   cursor: pointer;
 
-  background-color: $primary-600;
+  background-color: $nebula-600;
 
   h3 {
     font-family: "Aeonik-Medium", sans-serif;
@@ -126,7 +126,7 @@ ul.aa-List {
   }
 
   &[aria-selected="true"] {
-    background-color: $primary-400 !important;
+    background-color: $nebula-400 !important;
   }
 }
 
