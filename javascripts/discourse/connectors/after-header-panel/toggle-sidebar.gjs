@@ -1,0 +1,27 @@
+import { on } from "@ember/modifier";
+
+const toggleSidebar = () =>
+  document.querySelector(".sidebar-wrapper")?.classList.toggle("collapsed");
+
+<template>
+  <div>
+    <button
+      id="custom-toggle-head"
+      class="btn no-text btn-icon btn-default"
+      type="button"
+      {{on "click" toggleSidebar}}
+    >
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M3 6H21V8H3V6Z" fill="currentColor" />
+        <path d="M3 11H21V13H3V11Z" fill="currentColor" />
+        <path d="M3 16H21V18H3V16Z" fill="currentColor" />
+      </svg>
+    </button>
+  </div>
+</template>
