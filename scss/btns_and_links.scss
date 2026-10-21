@@ -1,184 +1,175 @@
 .btn {
-    color: $text-color;
-    border-radius: $corner-2xl;
+  color: $text-color;
+  border-radius: $corner-2xl;
 }
 
 #topic-footer-buttons {
-
-    .btn-icon-text:hover {
-        background-color: $primary-200;
-    }
-
+  .btn-icon-text:hover {
+    background-color: $primary-200;
+  }
 }
 
-
 p a {
-    color: $satellite-300 !important;
-    text-decoration: underline;
+  color: $satellite-300 !important;
+  text-decoration: underline;
 
-    &:visited {
-        color: $satellite-600 !important;
-    }
+  &:visited {
+    color: $satellite-600 !important;
+  }
 }
 
 button.widget-button {
-    &.btn-flat {
-        svg {
-            color: $satellite-600;
-        }
-
-        &.d-hover>svg {
-            color: $primary-50 !important;
-        }
+  &.btn-flat {
+    svg {
+      color: $satellite-600;
     }
 
+    &.d-hover > svg {
+      color: $primary-50 !important;
+    }
+  }
 }
 
 a.btn.btn-default {
-    color: $primary-100;
+  color: $primary-100;
 }
 
 .like-count,
 .d-icon-d-liked,
 .d-icon-d-unliked {
-    color: $horizon !important;
+  color: $horizon !important;
 }
 
 button.btn.btn-default,
 summary.btn.btn-default {
-    &:hover {
-        background-color: $primary-300;
-        color: $satellite-400;
+  &:hover {
+    background-color: $primary-300;
+    color: $satellite-400;
 
-        svg {
-            color: $satellite-400 !important;
-        }
+    svg {
+      color: $satellite-400 !important;
     }
-
+  }
 }
 
 button.dismiss-btn {
-    &:hover {
-        background-color: $horizon;
-        color: $primary-700;
+  &:hover {
+    background-color: $horizon;
+    color: $primary-700;
 
-        svg {
-            fill: $primary-700;
-
-        }
+    svg {
+      fill: $primary-700;
     }
+  }
 }
 
-input[type=text],
-input[type=password],
-input[type=datetime],
-input[type=datetime-local],
-input[type=date],
-input[type=month],
-input[type=time],
-input[type=week],
-input[type=number],
-input[type=email],
-input[type=url],
-input[type=search],
-input[type=tel],
-input[type=color] {
-    color: $satellite-400;
-    background-color: $primary-600;
-    border: 1px solid $primary-200;
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  color: $satellite-400;
+  background-color: $primary-600;
+  border: 1px solid $primary-200;
 }
 
 #d-menu-portals {
+  .fk-d-menu__inner-content {
+    background-color: $primary-600;
+    border-radius: $corner-md;
 
-    .fk-d-menu__inner-content {
-        background-color: $primary-600;
-        border-radius: $corner-md;
+    .dropdown-menu {
+      background-color: $primary-600;
 
-        .dropdown-menu {
-            background-color: $primary-600;
+      .dropdown-menu__item {
+        .notifications-tracking-btn {
+          border-radius: 0;
 
-            .dropdown-menu__item {
-                .notifications-tracking-btn {
-                    border-radius: 0;
+          &:hover {
+            background-color: $primary-400;
+          }
 
-                    &:hover {
-                        background-color: $primary-400;
-                    }
+          &.-selected {
+            background-color: $primary-300;
+          }
 
-                    &.-selected {
-                        background-color: $primary-300;
-                    }
+          .notifications-tracking-btn__icons svg.d-icon {
+            color: $satellite-600 !important;
+          }
 
-                    .notifications-tracking-btn__icons svg.d-icon {
-                        color: $satellite-600 !important;
+          .notifications-tracking-btn__label {
+            color: $satellite-600;
+          }
 
-                    }
-
-                    .notifications-tracking-btn__label {
-                        color: $satellite-600;
-                    }
-
-                    .notifications-tracking-btn__description {
-                        color: $satellite-400;
-                    }
-                }
-            }
+          .notifications-tracking-btn__description {
+            color: $satellite-400;
+          }
         }
+      }
     }
-
+  }
 }
 
 .select-kit.single-select.dropdown-select-box .select-kit-row .texts {
-    .name {
-        color: $satellite-400;
-    }
+  .name {
+    color: $satellite-400;
+  }
 
-    .desc {
-        color: $satellite-600;
-    }
+  .desc {
+    color: $satellite-600;
+  }
 }
 
 .select-kit.single-select.dropdown-select-box.is-expanded .select-kit-body {
-    background-color: $primary-600;
-    border: 1px solid $primary-200;
-    border-radius: $corner-md;
+  background-color: $primary-600;
+  border: 1px solid $primary-200;
+  border-radius: $corner-md;
 }
 
 .d-editor-container {
-    .d-editor-textarea-wrapper {
-        border: 1px solid $primary-300;
-    }
+  .d-editor-textarea-wrapper {
+    border: 1px solid $primary-300;
+  }
 
-    .d-editor-button-bar {
-        border-bottom: 1px solid $primary-300;
+  .d-editor-button-bar {
+    border-bottom: 1px solid $primary-300;
 
-        .btn.no-text.btn-icon svg.d-icon {
-            color: $satellite-600 !important;
-        }
+    .btn.no-text.btn-icon svg.d-icon {
+      color: $satellite-600 !important;
     }
+  }
 
-    textarea {
-        color: $satellite-400;
-    }
+  textarea {
+    color: $satellite-400;
+  }
 }
 
 .dropdown-menu__item {
-    button.btn {
-        border-radius: 0;
+  button.btn {
+    border-radius: 0;
 
-        &:hover {
-            background-color: $primary-300;
-            color: $satellite-400;
-        }
-
-        &:focus {
-            background-color: $primary-400;
-            color: $satellite-400;
-        }
+    &:hover {
+      background-color: $primary-300;
+      color: $satellite-400;
     }
+
+    &:focus {
+      background-color: $primary-400;
+      color: $satellite-400;
+    }
+  }
 }
 
 .discourse-no-touch .btn:hover {
-    background-color: $primary-300;
-    color: $satellite-400;
+  background-color: $primary-300;
+  color: $satellite-400;
 }

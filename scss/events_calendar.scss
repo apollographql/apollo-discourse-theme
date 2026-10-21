@@ -1,51 +1,47 @@
 #upcoming-events-calendar.fc-unthemed {
+  td {
+    border-color: $primary-300;
+  }
 
-    td {
-        border-color: $primary-300 ;
+  .fc-bg td.fc-today {
+    background-color: $primary-600;
+  }
+
+  .fc-button {
+    color: $primary-50;
+
+    &:hover {
+      background: $primary-600;
+      color: $primary-50;
     }
-
-    .fc-bg td.fc-today {
-        background-color: $primary-600;
-    }
-
-    .fc-button {
-        color: $primary-50;
-
-        &:hover {
-            background: $primary-600;
-            color: $primary-50;
-        }
-    }
-
+  }
 }
 
 #event-popover {
-    background-color: $primary-300;
+  background-color: $primary-300;
 }
 
 .discourse-post-event {
+  .event-info .status-and-creators {
+    color: $primary-100;
 
-    .event-info .status-and-creators {
-        color: $primary-100;
-
-        .username {
-            color: $primary-50;
-        }
+    .username {
+      color: $primary-50;
     }
+  }
 
-    .event-invitees-icon .going {
-        color: $aurora;
-    }
+  .event-invitees-icon .going {
+    color: $aurora;
+  }
 
-    .discourse-post-event-widget {
-        box-shadow: 0px 0px 4px 3px var(--primary-600);
-        border: 2px solid var(--primary-100);
-        background: var(--primary-600);
-        border-radius: $corner-md;
-    }
-
+  .discourse-post-event-widget {
+    box-shadow: 0px 0px 4px 3px var(--primary-600);
+    border: 2px solid var(--primary-100);
+    background: var(--primary-600);
+    border-radius: $corner-md;
+  }
 }
 
 .event-dates .discourse-local-date.cooked-date {
-    color: $primary-100;
+  color: $primary-100;
 }

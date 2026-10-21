@@ -1,97 +1,93 @@
 .sidebar-section-header-text {
-    font-family: "Aeonik-Bold";
+  font-family: "Aeonik-Bold";
 }
 
 .sidebar-section-link-wrapper {
-    .sidebar-section-link-prefix {
-        .prefix-span {
-            border-radius: .8em;
-            width: .8em;
-            height: .8em;
-        }
-
-        &.icon {
-            color: $primary-100;
-        }
+  .sidebar-section-link-prefix {
+    .prefix-span {
+      border-radius: 0.8em;
+      width: 0.8em;
+      height: 0.8em;
     }
 
-    .sidebar-section-link.active .sidebar-section-link-prefix.icon {
-        color: $primary-50;
+    &.icon {
+      color: $primary-100;
     }
+  }
+
+  .sidebar-section-link.active .sidebar-section-link-prefix.icon {
+    color: $primary-50;
+  }
 }
 
 .sidebar-section-wrapper {
-    border-bottom: 1px solid $primary-medium;
+  border-bottom: 1px solid $primary-medium;
 
+  .sidebar-section-header-caret .d-icon {
+    color: $primary-100;
+  }
 
-
-    .sidebar-section-header-caret .d-icon {
-        color: $primary-100;
-    }
-
-    .sidebar-section-header {
-        color: $text-color !important;
-    }
+  .sidebar-section-header {
+    color: $text-color !important;
+  }
 }
 
 .header-sidebar-toggle button .d-icon,
 .d-header-icons .d-icon {
-    color: $satellite-400 !important;
+  color: $satellite-400 !important;
 }
 
-
-
 .sidebar-wrapper {
-    &.collapsed {
-        display: none;
+  &.collapsed {
+    display: none;
+  }
+
+  .sidebar-section-link {
+    &:hover {
+      background-color: $primary-400;
     }
+  }
 
-    .sidebar-section-link {
-        &:hover {
-            background-color: $primary-400;
-        }
-    }
+  border-right: 1px solid $primary-medium;
+  max-width: 300px;
 
-    border-right: 1px solid $primary-medium;
-    max-width: 300px;
+  .sidebar-sections {
+    padding: 1.5rem 0 1rem;
+  }
 
-    .sidebar-sections {
-        padding: 1.5rem 0 1rem;
-    }
+  .admin-panel {
+    padding: 1rem;
+  }
 
-    .admin-panel {
-        padding: 1rem;
-    }
+  &,
+  .sidebar-container,
+  .sidebar-footer-wrapper {
+    background-color: $nebula;
+  }
 
-    &,
-    .sidebar-container,
-    .sidebar-footer-wrapper {
-        background-color: $nebula;
-    }
+  .sidebar-section-link-content-text {
+    color: $satellite;
+  }
 
-    .sidebar-section-link-content-text {
-        color: $satellite;
-    }
-
-    .sidebar-footer-actions-button.btn .d-icon {
-        color: $primary-200;
-    }
-
-
+  .sidebar-footer-actions-button.btn .d-icon {
+    color: $primary-200;
+  }
 }
 
 .admin-area .sidebar-wrapper .admin-panel {
-    background-color: $primary-500;
+  background-color: $primary-500;
 }
 
 .sidebar-wrapper .sidebar-sections__back-to-forum svg {
-    color: $primary-100;
+  color: $primary-100;
 }
 
 .sidebar-filter__input-container {
-    background: $primary-600;
+  background: $primary-600;
 }
 
-.sidebar-section-link-wrapper .sidebar-section-link .sidebar-section-link-content-badge {
-    color: $primary-50;
+.sidebar-section-link-wrapper
+  .sidebar-section-link
+  .sidebar-section-link-content-badge {
+  color: $primary-50;
 }

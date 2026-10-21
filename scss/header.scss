@@ -1,37 +1,35 @@
 .d-header {
-    border-bottom: 1px solid $primary-medium;
+  border-bottom: 1px solid $primary-medium;
 
-    .home-logo-wrapper-outlet {
-        min-width: 166px;
-        padding-left: 10px;
+  .home-logo-wrapper-outlet {
+    min-width: 166px;
+    padding-left: 10px;
+  }
 
+  .customLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    .communityTag {
+      font-size: 0.7em;
+      border-radius: 3px;
+      padding: 2px 5px;
+      border: solid 1px $primary-200;
+      font-family: "Inter";
     }
+  }
 
-    .customLogo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
+  .search-dropdown {
+    display: none;
+  }
 
-        .communityTag {
-            font-size: 0.7em;
-            border-radius: 3px;
-            padding: 2px 5px;
-            border: solid 1px $primary-200;
-            font-family: "Inter";
+  // .chat-header-icon {
+  //display: none;
+  // }
 
-        }
-    }
-
-    .search-dropdown {
-        display: none;
-    }
-
-    // .chat-header-icon {
-    //display: none;
-    // }
-
-    .d-header-mode {
-        display: none;
-    }
+  .d-header-mode {
+    display: none;
+  }
 }

@@ -1,299 +1,290 @@
 //.main-chat-outlet {
 
 .c-header .c-heading {
-    color: $primary-100 !important;
+  color: $primary-100 !important;
 }
 
 .has-full-page-chat .c-header .back-to-forum {
-    color: $primary-100 !important;
+  color: $primary-100 !important;
 
-    svg.d-icon {
-        color: $primary-100 !important
-    }
+  svg.d-icon {
+    color: $primary-100 !important;
+  }
 }
 
 .chat-channel .all-loaded-message {
-    color: $primary-100;
+  color: $primary-100;
 }
 
 .chat-composer-dropdown__trigger-btn .d-icon {
-    color: $primary-100 !important;
+  color: $primary-100 !important;
 }
 
 .chat-composer-button .d-icon {
-    color: $primary-100 !important;
+  color: $primary-100 !important;
 }
 
 .chat-notices {
-    .chat-retention-reminder {
-        color: $primary-50;
-    }
+  .chat-retention-reminder {
+    color: $primary-50;
+  }
 }
 
 .chat-channel-name {
-    color: $satellite-400;
+  color: $satellite-400;
 }
 
 .all-loaded-message {
-    color: $primary-200;
+  color: $primary-200;
 }
 
-.chat-message-separator-date+.chat-message-separator__line-container .chat-message-separator__line {
-    border-top: 1px solid $aurora;
+.chat-message-separator-date
+  + .chat-message-separator__line-container
+  .chat-message-separator__line {
+  border-top: 1px solid $aurora;
 }
 
 .chat-user-avatar.is-online .avatar {
-    box-shadow: inset 0px 0px 0px 1px $aurora, inset 0px 0px 0px 2px $secondary;
+  box-shadow: inset 0px 0px 0px 1px $aurora, inset 0px 0px 0px 2px $secondary;
 }
 
 .chat-message {
+  svg {
+    color: $primary-200;
+  }
+
+  &:hover {
+    background-color: $primary-300;
+  }
+
+  .discourse-local-date {
+    color: $satellite-600;
+
     svg {
-        color: $primary-200;
+      color: $satellite-600;
     }
+  }
 
-    &:hover {
-        background-color: $primary-300;
-    }
-
-    .discourse-local-date {
-        color: $satellite-600;
-
-        svg {
-            color: $satellite-600;
-        }
-    }
-
-    .chat-message-reaction.reacted {
-        background-color: $primary-600;
-    }
+  .chat-message-reaction.reacted {
+    background-color: $primary-600;
+  }
 }
 
 .chat-composer__inner-container {
-    background-color: $primary-600;
-    border: 1px solid $primary-300;
-    border-radius: $corner-md;
+  background-color: $primary-600;
+  border: 1px solid $primary-300;
+  border-radius: $corner-md;
+  color: $satellite-400;
+
+  textarea {
     color: $satellite-400;
+  }
 
-    textarea {
-        color: $satellite-400;
+  button {
+    svg.d-icon {
+      color: $primary-200;
+
+      &:hover {
+        background-color: $primary-50;
+        color: $primary-500;
+      }
     }
 
-    button {
-        svg.d-icon {
-            color: $primary-200;
-
-            &:hover {
-                background-color: $primary-50;
-                color: $primary-500;
-            }
-        }
-
-        &:hover {
-            background-color: $primary-50;
-            color: $primary-500;
-        }
+    &:hover {
+      background-color: $primary-50;
+      color: $primary-500;
     }
+  }
 }
 
 //}
 
 .chat-message-actions {
-
-    button.btn,
-    button.chat-message-reaction,
-    details {
-        &:hover {
-            color: $primary-500 !important;
-            background-color: $primary-300;
-        }
+  button.btn,
+  button.chat-message-reaction,
+  details {
+    &:hover {
+      color: $primary-500 !important;
+      background-color: $primary-300;
     }
+  }
 
-    .chat-message-reaction.reacted {
-        background-color: $primary-600;
-    }
+  .chat-message-reaction.reacted {
+    background-color: $primary-600;
+  }
 
-    .bookmark-btn,
-    .reply-btn,
-    .react-btn,
-    .more-buttons {
-        .d-icon {
-            color: $primary-100 !important;
-        }
+  .bookmark-btn,
+  .reply-btn,
+  .react-btn,
+  .more-buttons {
+    .d-icon {
+      color: $primary-100 !important;
     }
+  }
 
-    .select-kit.single-select.dropdown-select-box .select-kit-row .texts .name {
-        color: $satellite-400 !important;
-    }
+  .select-kit.single-select.dropdown-select-box .select-kit-row .texts .name {
+    color: $satellite-400 !important;
+  }
 }
 
 #d-menu-portals {
-    .fk-d-menu__inner-content {
-        border: 1px solid $primary-300;
+  .fk-d-menu__inner-content {
+    border: 1px solid $primary-300;
+  }
+
+  .chat-composer-dropdown__item {
+    button {
+      border-radius: 0px;
+
+      &:hover {
+        background-color: $primary-300;
+        color: $satellite-300;
+      }
     }
 
-    .chat-composer-dropdown__item {
-        button {
-            border-radius: 0px;
-
-            &:hover {
-                background-color: $primary-300;
-                color: $satellite-300;
-            }
-        }
-
-        svg {
-            color: $primary-100;
-        }
+    svg {
+      color: $primary-100;
     }
+  }
 }
 
 .d-modal__container {
-    .pika-label {
-        color: $satellite-400;
+  .pika-label {
+    color: $satellite-400;
+  }
+
+  button,
+  .pika-prev,
+  .pika-next {
+    color: $primary-100;
+
+    &:hover {
+      background-color: $primary-50;
+      color: $primary-500;
+    }
+  }
+
+  .calendar-date-time-input .time-pickers {
+    color: $satellite-400;
+    border-top: 1px solid $primary-300;
+
+    svg {
+      color: $primary-100;
     }
 
-    button,
-    .pika-prev,
-    .pika-next {
-        color: $primary-100;
-
-        &:hover {
-            background-color: $primary-50;
-            color: $primary-500;
-        }
+    input {
+      border-color: $primary-300;
     }
+  }
 
-    .calendar-date-time-input .time-pickers {
-        color: $satellite-400;
-        border-top: 1px solid $primary-300;
-
-        svg {
-            color: $primary-100;
-        }
-
-        input {
-            border-color: $primary-300;
-        }
-    }
-
-    input.time-picker {
-        color: $satellite-400;
-        border-color: $primary-300;
-    }
+  input.time-picker {
+    color: $satellite-400;
+    border-color: $primary-300;
+  }
 }
 
 .d-modal.discourse-local-dates-create-modal {
-    .date-time-configuration {
-        .date-time-control {
+  .date-time-configuration {
+    .date-time-control {
+      &.is-filled .date-time,
+      &.is-selected .date-time {
+        color: $satellite-400;
+      }
 
-            &.is-filled .date-time,
-            &.is-selected .date-time {
-                color: $satellite-400;
-            }
-
-            .date-time {
-                color: $satellite-600;
-            }
-        }
+      .date-time {
+        color: $satellite-600;
+      }
     }
+  }
 }
 
 .d-modal__footer {
-    button {
-        color: $primary-100;
-        background-color: $primary-600;
+  button {
+    color: $primary-100;
+    background-color: $primary-600;
 
-        &.btn-primary {
-            background-color: $primary-100;
-            color: $primary-600;
-        }
+    &.btn-primary {
+      background-color: $primary-100;
+      color: $primary-600;
     }
+  }
 }
 
 .c-navbar__actions .d-icon {
-    color: $primary-100;
+  color: $primary-100;
 }
 
 .chat-drawer {
-    box-shadow: 0px 0px 15px 2px $primary-600;
+  box-shadow: 0px 0px 15px 2px $primary-600;
 
-    .chat-drawer-container {
-        //background-color: $primary-600;
+  .chat-drawer-container {
+    //background-color: $primary-600;
 
-        .c-navbar-container {
-            background-color: $primary-400;
-            border-bottom: 1px solid $primary-300;
-        }
-
-        border: 1px solid $primary-300;
-        border-top-left-radius: $corner-md;
-        border-top-right-radius: $corner-md;
-        color: $satellite-400;
-
-        .chat-channel-name__label {
-            color: $satellite-600;
-        }
-
-        .chat-composer__wrapper {
-            border-top: 1px solid $primary-300;
-            // background-color: $primary-00;
-
-        }
-
-        .chat-scroll-to-bottom__button.visible {
-            background-color: $primary-100;
-            color: $primary-600;
-            opacity: 0.8;
-        }
+    .c-navbar-container {
+      background-color: $primary-400;
+      border-bottom: 1px solid $primary-300;
     }
 
-    .chat-channel-divider {
-        color: $satellite-500;
+    border: 1px solid $primary-300;
+    border-top-left-radius: $corner-md;
+    border-top-right-radius: $corner-md;
+    color: $satellite-400;
 
-        button.btn-flat .d-icon {
-            color: $primary-100;
-        }
+    .chat-channel-name__label {
+      color: $satellite-600;
     }
 
-    .chat-channel-row,
-    .chat-channel-row:not(:last-of-type) {
-        border-bottom: 1px solid $primary-400 !important;
-
-        &:hover {
-            background-color: $primary-200;
-        }
-
-
+    .chat-composer__wrapper {
+      border-top: 1px solid $primary-300;
+      // background-color: $primary-00;
     }
 
-
-    .c-footer__item {
-
-        .d-icon,
-        .d-button-label {
-            color: $satellite-500;
-
-        }
-
-        &.--active {
-
-            .d-icon,
-            .d-button-label {
-                color: $primary-100;
-
-            }
-        }
+    .chat-scroll-to-bottom__button.visible {
+      background-color: $primary-100;
+      color: $primary-600;
+      opacity: 0.8;
     }
+  }
+
+  .chat-channel-divider {
+    color: $satellite-500;
+
+    button.btn-flat .d-icon {
+      color: $primary-100;
+    }
+  }
+
+  .chat-channel-row,
+  .chat-channel-row:not(:last-of-type) {
+    border-bottom: 1px solid $primary-400 !important;
+
+    &:hover {
+      background-color: $primary-200;
+    }
+  }
+
+  .c-footer__item {
+    .d-icon,
+    .d-button-label {
+      color: $satellite-500;
+    }
+
+    &.--active {
+      .d-icon,
+      .d-button-label {
+        color: $primary-100;
+      }
+    }
+  }
 }
 
 .full-page-chat .c-navbar-container {
-    min-height: 45px;
-    background-color: $primary-500;
-    border-bottom: 1px solid $primary-300;
-    z-index: 1;
-
+  min-height: 45px;
+  background-color: $primary-500;
+  border-bottom: 1px solid $primary-300;
+  z-index: 1;
 }
 
 .chat-scroll-to-bottom__arrow {
-    background-color: $primary-200;
+  background-color: $primary-200;
 }

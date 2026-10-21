@@ -1,66 +1,62 @@
 #reply-control {
-    .reply-to {
-        .reply-details .d-icon {
-            color: $primary-200;
-        }
-
-        .composer-action-title .topic-link {
-            color: $primary-50;
-        }
+  .reply-to {
+    .reply-details .d-icon {
+      color: $primary-200;
     }
 
-    .d-editor-container {
-        .d-editor-textarea-wrapper {
-            border: 1px solid $primary-300;
-        }
+    .composer-action-title .topic-link {
+      color: $primary-50;
+    }
+  }
 
-        .d-editor-button-bar {
-            border-bottom: 1px solid $primary-300;
-
-            .btn.no-text {
-                color: $satellite-600;
-            }
-        }
-
-        textarea {
-            color: $satellite-400;
-        }
+  .d-editor-container {
+    .d-editor-textarea-wrapper {
+      border: 1px solid $primary-300;
     }
 
-    .composer-popup .btn.close {
-        color: $primary-100;
+    .d-editor-button-bar {
+      border-bottom: 1px solid $primary-300;
+
+      .btn.no-text {
+        color: $satellite-600;
+      }
     }
 
-    .composer-controls button .d-icon {
-        color: $primary-200;
+    textarea {
+      color: $satellite-400;
     }
+  }
 
-    .toggle-preview .d-icon {
-        color: $primary-200;
+  .composer-popup .btn.close {
+    color: $primary-100;
+  }
+
+  .composer-controls button .d-icon {
+    color: $primary-200;
+  }
+
+  .toggle-preview .d-icon {
+    color: $primary-200;
+  }
+
+  .d-editor-preview {
+    color: $satellite-100;
+    border: 1px solid $primary-300;
+    padding: 8px;
+    background-color: $primary-600;
+
+    &::before {
+      content: "Preview";
+      color: $primary-100;
     }
-
-    .d-editor-preview {
-        color: $satellite-100;
-        border: 1px solid $primary-300;
-        padding: 8px;
-        background-color: $primary-600;
-
-
-        &::before {
-            content: "Preview";
-            color: $primary-100;
-        }
-
-    }
-
+  }
 }
 
 .select-kit .select-kit-row.category-row .category-desc {
-    color: $satellite-600;
+  color: $satellite-600;
 }
 
 #reply-control {
-    border-top-left-radius: $corner-md ;
-    border-top-right-radius: $corner-md ;
-
+  border-top-left-radius: $corner-md;
+  border-top-right-radius: $corner-md;
 }
