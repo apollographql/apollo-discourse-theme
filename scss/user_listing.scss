@@ -1,84 +1,80 @@
 .users-directory {
+  .select-kit.dropdown-select-box.period-chooser {
+    .period-chooser-header {
+      h2.selected-name {
+        color: $satellite-400;
 
-    .select-kit.dropdown-select-box.period-chooser {
-        .period-chooser-header {
-            h2.selected-name {
-                color: $satellite-400;
-
-                .date-section {
-                    color: $satellite-600;
-                }
-
-                .top-date-string {
-                    color: $satellite-400;
-                }
-            }
-
-            .d-icon {
-                color: $primary-100;
-            }
+        .date-section {
+          color: $satellite-600;
         }
 
-        .period-chooser-row {
-            .top-date-string {
-                color: $satellite-600;
-            }
-
-            .date-section {
-                color: $satellite-400;
-            }
+        .top-date-string {
+          color: $satellite-400;
         }
-    }
+      }
 
-    .directory-last-updated {
+      .d-icon {
         color: $primary-100;
+      }
     }
 
-    .directory-table__column-header {
+    .period-chooser-row {
+      .top-date-string {
+        color: $satellite-600;
+      }
+
+      .date-section {
         color: $satellite-400;
+      }
     }
+  }
 
-    .directory-table-container {
-        color: $satellite-400 !important;
+  .directory-last-updated {
+    color: $primary-100;
+  }
+
+  .directory-table__column-header {
+    color: $satellite-400;
+  }
+
+  .directory-table-container {
+    color: $satellite-400 !important;
+  }
+
+  .directory-table__value {
+    color: $satellite-400;
+  }
+
+  .directory-table .me .directory-table__cell {
+    background-color: $primary-300;
+    color: $satellite-400 !important;
+  }
+
+  .user-detail {
+    .title {
+      color: $satellite-600;
     }
+  }
 
-    .directory-table__value {
-        color: $satellite-400;
-    }
-
-    .directory-table .me .directory-table__cell {
-        background-color: $primary-300;
-        color: $satellite-400 !important;
-    }
-
-    .user-detail {
-
-        .title {
-            color: $satellite-600;
-        }
-    }
-
-
-
-    .total-rows {
-        color: $primary-100 !important;
-    }
+  .total-rows {
+    color: $primary-100 !important;
+  }
 }
 
 .user-detail {
-    .username {
-        color: $satellite-200;
-    }
+  .username {
+    color: $satellite-200;
+  }
 
-    .name {
-        color: $satellite-400;
-    }
+  .name {
+    color: $satellite-400;
+  }
 
-    .details {
-        color: $satellite-600;
-    }
+  .details {
+    color: $satellite-600;
+  }
 }
 
 .cakeday ul.user-info-list .details {
-    color: $satellite-600;
+  color: $satellite-600;
 }

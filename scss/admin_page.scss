@@ -1,79 +1,75 @@
 .admin-contents {
-    .alert.alert-error {
-        background-color: $primary-600;
-        border: 1px solid $horizon;
-        border-radius: $corner-md;
-        color: $satellite-400;
+  .alert.alert-error {
+    background-color: $primary-600;
+    border: 1px solid $horizon;
+    border-radius: $corner-md;
+    color: $satellite-400;
+  }
+
+  a {
+    color: $satellite-400 !important;
+  }
+
+  a:visited {
+    color: $satellite-600 !important;
+  }
+
+  svg.d-icon {
+    color: $primary-200 !important;
+  }
+
+  a.d-breadcrumbs__link,
+  a.d-breadcrumbs__link:visited {
+    color: $primary-50 !important;
+  }
+
+  .user-metrics .table-cell .label {
+    color: $primary-100;
+  }
+
+  .directory-table__column-header {
+    color: $primary-100;
+  }
+
+  .admin-reports-list__report {
+    border: 1px solid $primary-200;
+    border-radius: $corner-md;
+
+    &:hover {
+      background-color: $primary-300;
     }
-
-    a {
-        color: $satellite-400 !important;
-    }
-
-    a:visited {
-        color: $satellite-600 !important;
-
-    }
-
-    svg.d-icon {
-        color: $primary-200 !important;
-    }
-
-    a.d-breadcrumbs__link,
-    a.d-breadcrumbs__link:visited {
-        color: $primary-50 !important;
-    }
-
-    .user-metrics .table-cell .label {
-        color: $primary-100;
-    }
-
-    .directory-table__column-header {
-        color: $primary-100;
-    }
-
-    .admin-reports-list__report {
-        border: 1px solid $primary-200;
-        border-radius: $corner-md;
-
-        &:hover {
-            background-color: $primary-300;
-        }
-    }
-
+  }
 }
 
 .dashboard-next .dashboard-problems .actions {
-    color: $primary-100;
+  color: $primary-100;
 }
 
 #user-content {
-    .post-list {
-        .title {
-            color: $satellite-200 !important;
-        }
-
-        .excerpt {
-            color: $satellite-400 !important;
-        }
+  .post-list {
+    .title {
+      color: $satellite-200 !important;
     }
 
+    .excerpt {
+      color: $satellite-400 !important;
+    }
+  }
 }
 
 .site-texts .site-text .site-text-value {
-    color: $satellite-600;
+  color: $satellite-600;
 }
 
 .user-main .staff-counters {
-    color: $satellite-400 !important;
-    border-radius: $corner-md;
+  color: $satellite-400 !important;
+  border-radius: $corner-md;
 }
 
-
 .admin-customize .themes-list-container__item .inner-wrapper {
-    color: $satellite-500 !important;
+  color: $satellite-500 !important;
 }
 
 .admin-customize .themes-list-container__item.inactive-indicator span.empty {
-    color: $satellite-600 !important;
+  color: $satellite-600 !important;
 }

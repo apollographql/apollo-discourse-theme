@@ -1,56 +1,51 @@
 .show-badge {
-    h1 a {
-        color: $primary-50;
-    }
+  h1 a {
+    color: $primary-50;
+  }
 }
 
 .badge-card {
-    background-color: $primary-500;
-    border: 1px solid $primary-300;
-    border-radius: $corner-md;
+  background-color: $primary-500;
+  border: 1px solid $primary-300;
+  border-radius: $corner-md;
 
-    .badge-info h3 {
-        color: $satellite-400;
+  .badge-info h3 {
+    color: $satellite-400;
+  }
 
+  .badge-contents {
+    .badge-link {
+      color: $satellite-400;
     }
 
-    .badge-contents {
-        .badge-link {
-            color: $satellite-400;
+    .badge-summary {
+      a {
+        color: $primary-50;
+      }
 
-        }
-
-        .badge-summary {
-            a {
-                color: $primary-50;
-            }
-
-            color: $satellite-400;
-        }
-
-        .badge-granted {
-            color: $primary-100;
-        }
+      color: $satellite-400;
     }
 
-
+    .badge-granted {
+      color: $primary-100;
+    }
+  }
 }
 
 .badges .admin-container {
-    .content-list .admin-badge-list {
-        border: 1px solid $primary-300;
-
-    }
+  .content-list .admin-badge-list {
+    border: 1px solid $primary-300;
+  }
 }
 
 .admin-badges .current-badge-header svg.d-icon {
-    color: $primary-50 !important;
+  color: $primary-50 !important;
 }
 
 .user-badge {
-    color: $primary-50;
+  color: $primary-50;
 }
 
 .readonly-field {
-    color: $satellite-600 !important;
+  color: $satellite-600 !important;
 }

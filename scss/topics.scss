@@ -1,193 +1,177 @@
 // topic list is both in categories and topics
 .topic-list {
-    thead {
-        border-bottom: 4px solid $primary-300;
-        font-family: "Aeonik-Regular";
+  thead {
+    border-bottom: 4px solid $primary-300;
+    font-family: "Aeonik-Regular";
+  }
+
+  td {
+    color: $satellite-600;
+  }
+
+  tr {
+    border-bottom: 1px solid $primary-300;
+  }
+
+  th {
+    color: $satellite-600;
+  }
+
+  .topic-list-item-separator .topic-list-data {
+    border-top: 1px solid $primary-300;
+
+    span {
+      color: $primary-200;
+    }
+  }
+
+  .main-link a.title {
+    color: $satellite-300;
+    font-family: "Aeonik-regular";
+  }
+
+  .topic-list-item {
+    &.visited .topic-list-data a.title:not(.badge-notification) {
+      color: $satellite-600;
     }
 
-    td {
-        color: $satellite-600;
-    }
-
-
-    tr {
-        border-bottom: 1px solid $primary-300;
-    }
-
-
-    th {
-        color: $satellite-600;
-
-    }
-
-    .topic-list-item-separator .topic-list-data {
-        border-top: 1px solid $primary-300;
-
-        span {
-            color: $primary-200;
-        }
-    }
-
-    .main-link a.title {
-        color: $satellite-300;
-        font-family: "Aeonik-regular";
-    }
-
-
-
-    .topic-list-item {
-
-        &.visited .topic-list-data a.title:not(.badge-notification) {
-            color: $satellite-600;
-        }
-
-        // .link-bottom-line .discourse-tag {
-        //     color: $primary-100;
-        //     padding: 0px 4px;
-        //     border-radius: 3px;
-        //     background-color: $primary-400;
-        // }
-    }
+    // .link-bottom-line .discourse-tag {
+    //     color: $primary-100;
+    //     padding: 0px 4px;
+    //     border-radius: 3px;
+    //     background-color: $primary-400;
+    // }
+  }
 }
 
-
-
 #topic-title h1 a {
-    color: $satellite-300;
+  color: $satellite-300;
 }
 
 .discourse-tag {
-    color: $satellite-500 !important;
-    padding: 0px 4px !important;
-    border-radius: 3px !important;
-    background-color: $primary-300 !important;
-    margin-right: 2px;
-
+  color: $satellite-500 !important;
+  padding: 0px 4px !important;
+  border-radius: 3px !important;
+  background-color: $primary-300 !important;
+  margin-right: 2px;
 }
 
-
 .topic-map__contents .topic-map__stats.--single-stat button span {
-    color: $satellite-600 !important;
+  color: $satellite-600 !important;
 }
 
 .topic-body {
+  border-top: 1px solid $primary;
 
-    border-top: 1px solid $primary;
+  .post-controls .extra-buttons .accepted {
+    color: $aurora;
+  }
 
-    .post-controls .extra-buttons .accepted {
-        color: $aurora;
-    }
-
-    .cooked details,
-    details .d-editor-preview,
-    details.details__boxed {
-        border: 1px solid $primary;
-        color: $text-color;
-        border-radius: $corner-sm;
-    }
+  .cooked details,
+  details .d-editor-preview,
+  details.details__boxed {
+    border: 1px solid $primary;
+    color: $text-color;
+    border-radius: $corner-sm;
+  }
 }
 
 .footer-message {
-    color: $satellite-600;
+  color: $satellite-600;
 }
 
 .first.new-user:not(.staff) a {
-    color: $primary-100;
+  color: $primary-100;
 }
 
 .topic-map.--op {
-    border-top: 1px solid $primary;
+  border-top: 1px solid $primary;
 }
 
 .loading-container {
-    thead {
-        border-bottom: none;
-        font-family: "Aeonik-Regular";
-        font-size: 1.2rem;
-    }
+  thead {
+    border-bottom: none;
+    font-family: "Aeonik-Regular";
+    font-size: 1.2rem;
+  }
 }
 
 nav.post-controls button.btn-icon,
 nav.post-controls button.widget-button {
-    svg {
-        color: $primary-100;
-    }
+  svg {
+    color: $primary-100;
+  }
 
-    &.reply {
-        color: $primary-100;
+  &.reply {
+    color: $primary-100;
 
-        .d-icon {
-            color: $primary-100;
-        }
+    .d-icon {
+      color: $primary-100;
     }
+  }
 }
 
 .topic-footer-main-buttons {
-
-    button.btn.btn-icon,
-    button.btn.btn-icon-text {
-        &:not(.btn-primary) {
-            background-color: $primary-300;
-        }
-
+  button.btn.btn-icon,
+  button.btn.btn-icon-text {
+    &:not(.btn-primary) {
+      background-color: $primary-300;
     }
+  }
 }
-
 
 .latest-topic-list-item {
-    .topic-stats a {
-        color: $primary-100;
-    }
+  .topic-stats a {
+    color: $primary-100;
+  }
 }
 
-tr.last-visit+tr.topic-list-item-separator {
-    td.topic-list-data {
-        border-top: 1px solid $aurora ;
+tr.last-visit + tr.topic-list-item-separator {
+  td.topic-list-data {
+    border-top: 1px solid $aurora;
 
-        span {
-            color: $aurora;
-        }
+    span {
+      color: $aurora;
     }
-
-
+  }
 }
 
 .post-notice.old {
-    color: $primary-200;
+  color: $primary-200;
 }
 
 .topic-map__stat-label {
-    color: $primary-200 !important;
+  color: $primary-200 !important;
 }
 
 .small-action .small-action-desc {
-    color: $satellite-600;
-    border-top: 1px solid $satellite-600;
+  color: $satellite-600;
+  border-top: 1px solid $satellite-600;
 }
 
 .small-action.topic-post-visited .topic-post-visited-line {
-    color: $aurora;
-    border-bottom: 1px solid $aurora;
+  color: $aurora;
+  border-bottom: 1px solid $aurora;
 }
 
 .aside.quote .title {
-    background-color: $primary-400;
+  background-color: $primary-400;
 }
 
 nav.post-controls .show-replies {
-    color: $primary-200 !important;
+  color: $primary-200 !important;
 
-    .d-icon {
-        color: $primary-200 !important;
-    }
+  .d-icon {
+    color: $primary-200 !important;
+  }
 }
 
 .more-topics__browse-more {
-    color: $satellite-400;
+  color: $satellite-400;
 }
 
 #topic-title {
-    .title-wrapper .topic-statuses .d-icon {
-        color: $primary-100;
-    }
+  .title-wrapper .topic-statuses .d-icon {
+    color: $primary-100;
+  }
 }

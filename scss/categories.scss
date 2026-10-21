@@ -1,121 +1,113 @@
 div.edit-category {
-    .edit-category-title-bar {
-        background-color: $nebula;
-        border-bottom: 1px solid $primary-300;
-    }
+  .edit-category-title-bar {
+    background-color: $nebula;
+    border-bottom: 1px solid $primary-300;
+  }
 }
 
 .badge-category__wrapper {
-    .badge-category {
-        &:before {
-            border-radius: .625rem;
-        }
-
-        &__name {
-            color: $satellite-300;
-        }
+  .badge-category {
+    &:before {
+      border-radius: 0.625rem;
     }
+
+    &__name {
+      color: $satellite-300;
+    }
+  }
 }
 
 .categories-and-latest {
-    tr {
-        border-bottom: 1px solid $primary-300 ;
-    }
+  tr {
+    border-bottom: 1px solid $primary-300;
+  }
 
-    .table-heading {
-        border-bottom: 3px solid $primary-300 ;
-
-    }
+  .table-heading {
+    border-bottom: 3px solid $primary-300;
+  }
 }
 
 .category-list {
-    thead {
-        font-family: "Aeonik-Regular";
-        font-size: 1.2rem;
+  thead {
+    font-family: "Aeonik-Regular";
+    font-size: 1.2rem;
 
-        tr {
-            border-bottom: 3px solid $primary-300 ;
-
-        }
-
-        th {
-            color: $satellite-600;
-        }
+    tr {
+      border-bottom: 3px solid $primary-300;
     }
 
-
-    tbody {
-        .category {
-            h3 {
-                a[href] {
-                    color: $satellite-300;
-                    font-family: "Aeonik-Medium";
-                }
-            }
-        }
-
-
+    th {
+      color: $satellite-600;
     }
+  }
 
-    .category-description span {
+  tbody {
+    .category {
+      h3 {
+        a[href] {
+          color: $satellite-300;
+          font-family: "Aeonik-Medium";
+        }
+      }
+    }
+  }
+
+  .category-description span {
+    color: $satellite-600;
+  }
+
+  .topics {
+    div:first-child {
+      color: $satellite-600;
+
+      span.value {
         color: $satellite-600;
+      }
     }
-
-    .topics {
-        div:first-child {
-            color: $satellite-600;
-
-            span.value {
-                color: $satellite-600;
-            }
-        }
-
-    }
-
+  }
 }
 
 .latest-topic-list {
-    .table-heading {
-        font-family: "Aeonik-Regular";
-        color: $satellite-600;
-        font-size: 1.2rem;
-    }
+  .table-heading {
+    font-family: "Aeonik-Regular";
+    color: $satellite-600;
+    font-size: 1.2rem;
+  }
 
-    .heading {
-        color: $satellite-100;
-        font-family: "Aeonik-Medium";
-    }
+  .heading {
+    color: $satellite-100;
+    font-family: "Aeonik-Medium";
+  }
 
-    .latest-topic-list-item {
-        border-bottom: 1px solid $primary-300;
+  .latest-topic-list-item {
+    border-bottom: 1px solid $primary-300;
 
-        .top-row {
-            a.title {
-                color: $satellite-300;
+    .top-row {
+      a.title {
+        color: $satellite-300;
 
-                &:visited {
-                    color: $satellite-600;
-                }
-            }
+        &:visited {
+          color: $satellite-600;
         }
-
-        span.topic-status svg.d-icon-far-square-check {
-            fill: $aurora;
-            color: $aurora;
-        }
+      }
     }
 
-    span.number {
-        color: $satellite-600;
+    span.topic-status svg.d-icon-far-square-check {
+      fill: $aurora;
+      color: $aurora;
     }
+  }
+
+  span.number {
+    color: $satellite-600;
+  }
 }
 
-
 .topic-statuses .topic-status svg.d-icon-far-square-check {
-    fill: $aurora;
-    color: $aurora;
+  fill: $aurora;
+  color: $aurora;
 }
 
 .nav-stacked a.active {
-    color: $primary-50;
+  color: $primary-50;
 }

@@ -1,71 +1,68 @@
 .login-page,
 .signup-page {
-    .d-header {
-        background-color: $primary-600 !important;
-        border-bottom: 1px solid $primary-300 !important;
+  .d-header {
+    background-color: $primary-600 !important;
+    border-bottom: 1px solid $primary-300 !important;
+  }
+
+  #main-outlet-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .login-body,
+  .signup-body {
+    color: $satellite-300;
+
+    .btn {
+      color: $primary-600 !important;
     }
 
-
-    #main-outlet-wrapper {
-        margin-left: auto;
-        margin-right: auto;
+    .signup-progress-bar__circle {
+      border-color: $aurora;
     }
 
-    .login-body,
-    .signup-body {
-        color: $satellite-300;
-
-        .btn {
-            color: $primary-600 !important;
-        }
-
-        .signup-progress-bar__circle {
-            border-color: $aurora;
-        }
-
-        #new-account-link {
-            color: $primary-100 !important;
-
-        }
-
-        .input-group label.alt-placeholder {
-            color: $primary-200;
-        }
-
-        input {
-            background-color: $primary-600;
-        }
-
-        .signup-page-cta__existing-account {
-            color: $primary-100 !important;
-        }
-
-        .signup-page-cta__disclaimer {
-            color: $satellite-600 !important;
-
-            a {
-                color: $satellite-200 !important;
-            }
-        }
-
-        label.alt-placeholder {
-            color: $primary-200 !important;
-        }
-
-        .instructions,
-        .create-account-email .more-info {
-            color: $primary-100;
-        }
-
-        .login-page-cta__no-account-yet,
-        .signup-page-cta__login,
-        .login__password-links {
-            color: $satellite-500 !important;
-
-        }
+    #new-account-link {
+      color: $primary-100 !important;
     }
 
-    .sidebar-wrapper {
-        border-right: none;
+    .input-group label.alt-placeholder {
+      color: $primary-200;
     }
+
+    input {
+      background-color: $primary-600;
+    }
+
+    .signup-page-cta__existing-account {
+      color: $primary-100 !important;
+    }
+
+    .signup-page-cta__disclaimer {
+      color: $satellite-600 !important;
+
+      a {
+        color: $satellite-200 !important;
+      }
+    }
+
+    label.alt-placeholder {
+      color: $primary-200 !important;
+    }
+
+    .instructions,
+    .create-account-email .more-info {
+      color: $primary-100;
+    }
+
+    .login-page-cta__no-account-yet,
+    .signup-page-cta__login,
+    .login__password-links {
+      color: $satellite-500 !important;
+    }
+  }
+
+  .sidebar-wrapper {
+    border-right: none;
+  }
 }

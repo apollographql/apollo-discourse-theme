@@ -1,137 +1,130 @@
 .admin-nav {
-    .nav-stacked {
-        a.active {
-            color: $primary-high;
-        }
+  .nav-stacked {
+    a.active {
+      color: $primary-high;
     }
+  }
 }
 
 nav.post-controls .actions button {
-    color: $satellite-400;
+  color: $satellite-400;
 }
 
 .nav-pills {
-    >li {
+  > li {
+    a,
+    button {
+      color: $text-color;
 
-        a,
-        button {
-            color: $text-color;
+      &:hover {
+        color: $satellite-200;
+        border-radius: $corner-xl;
+      }
 
-            &:hover {
-                color: $satellite-200;
-                border-radius: $corner-xl;
-            }
+      &.active {
+        color: #fff;
+        font-weight: 600;
 
-            &.active {
-                color: #FFF;
-                font-weight: 600;
-
-                .d-icon {
-                    color: $primary-50;
-                }
-
-                &:after {
-                    height: 4px;
-                    background-color: $primary-50;
-                }
-            }
+        .d-icon {
+          color: $primary-50;
         }
+
+        &:after {
+          height: 4px;
+          background-color: $primary-50;
+        }
+      }
     }
+  }
 }
 
 .more-topics__container .nav li .btn .d-button-label {
-    color: $primary-100 !important;
+  color: $primary-100 !important;
 }
 
 .select-kit {
-    .select-kit-header:not(.btn) {
-        padding-left: 0.8rem;
-        padding-right: 0.8rem;
+  .select-kit-header:not(.btn) {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  &.combo-box {
+    .select-kit-header {
+      border: 1px solid $primary-50 !important;
+
+      &:hover {
+        background-color: $primary-300;
+      }
+
+      .select-kit-header-wrapper > div,
+      svg {
+        color: $satellite-400 !important;
+      }
     }
+  }
 
-    &.combo-box {
-        .select-kit-header {
-            border: 1px solid $primary-50 !important;
-
-            &:hover {
-                background-color: $primary-300;
-            }
-
-            .select-kit-header-wrapper>div,
-            svg {
-                color: $satellite-400 !important;
-            }
-        }
+  &.is-expanded {
+    .select-kit-body {
+      border: 1px solid $primary-200;
+      border-radius: $corner-md;
+      background-color: $primary-600;
+      margin: 0.5rem 0 0 0 !important;
+      padding: 0.5rem;
     }
+  }
 
-    &.is-expanded {
-        .select-kit-body {
-            border: 1px solid $primary-200;
-            border-radius: $corner-md;
-            background-color: $primary-600;
-            margin: 0.5rem 0 0 0 !important;
-            padding: 0.5rem;
-
-        }
+  &.single-select {
+    &.is-expanded .select-kit-header:not(.btn),
+    .select-kit-header:not(.btn):focus,
+    .select-kit-header:not(.btn):active {
+      outline: 1px solid $primary-200;
+      border: none;
+      outline-offset: -1px;
+      background-color: $primary-600;
     }
-
-    &.single-select {
-
-
-        &.is-expanded .select-kit-header:not(.btn),
-        .select-kit-header:not(.btn):focus,
-        .select-kit-header:not(.btn):active {
-            outline: 1px solid $primary-200;
-            border: none;
-            outline-offset: -1px;
-            background-color: $primary-600;
-        }
-    }
+  }
 }
 
 .list-controls {
-    .combo-box {
-        .combo-box-header {
-            border-radius: $corner-2xl;
-        }
+  .combo-box {
+    .combo-box-header {
+      border-radius: $corner-2xl;
     }
+  }
 }
 
-
 .select-kit.combo-box.category-drop .select-kit-row .topic-count {
-    color: $primary-200;
+  color: $primary-200;
 }
 
 .badge-category__wrapper {
-
-    .d-icon {
-        color: $satellite-500;
-    }
+  .d-icon {
+    color: $satellite-500;
+  }
 }
 
 .timeline-container .topic-timeline .timeline-scrollarea {
-    border-left: 1px solid $primary-50;
+  border-left: 1px solid $primary-50;
 
-    .timeline-handle {
-        background-color: $primary-50;
-    }
+  .timeline-handle {
+    background-color: $primary-50;
+  }
 }
 
 #custom-toggle-head {
-    display: none;
-    height: 42px;
+  display: none;
+  height: 42px;
 
-    @media (min-width: 768px) {
-        display: block;
-    }
+  @media (min-width: 768px) {
+    display: block;
+  }
 
-    color: $satellite-400;
-    background: none;
-    padding: 0.5rem;
+  color: $satellite-400;
+  background: none;
+  padding: 0.5rem;
 
-    &:hover {
-        color: $primary-50 !important;
-        background: $primary-300;
-    }
-
+  &:hover {
+    color: $primary-50 !important;
+    background: $primary-300;
+  }
 }

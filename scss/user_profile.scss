@@ -1,276 +1,264 @@
 //
 
 .user-main {
+  .about .primary {
+    color: $satellite-500;
+  }
 
-    .about .primary {
-        color: $satellite-500 ;
+  .user-profile-names__secondary {
+    color: $satellite-600 !important;
+  }
 
+  .alert.alert-error {
+    background-color: $primary-600;
+    border: 1px solid $horizon;
+    border-radius: $corner-md;
+    color: $satellite-400;
+  }
+
+  .instructions {
+    color: $satellite-500 !important;
+  }
+
+  h3 {
+    color: $satellite-300;
+  }
+
+  .d-editor-container {
+    .d-editor-textarea-wrapper {
+      border: 1px solid $primary-300;
     }
 
-    .user-profile-names__secondary {
-        color: $satellite-600 !important;
+    .d-editor-button-bar {
+      border-bottom: 1px solid $primary-300;
 
-    }
-
-    .alert.alert-error {
-        background-color: $primary-600;
-        border: 1px solid $horizon;
-        border-radius: $corner-md;
-        color: $satellite-400;
-    }
-
-    .instructions {
-        color: $satellite-500 !important;
-    }
-
-    h3 {
-        color: $satellite-300;
-    }
-
-    .d-editor-container {
-        .d-editor-textarea-wrapper {
-            border: 1px solid $primary-300;
-        }
-
-        .d-editor-button-bar {
-            border-bottom: 1px solid $primary-300;
-
-            .btn.no-text {
-                color: $satellite-600;
-            }
-        }
-
-        textarea {
-            color: $satellite-400;
-        }
-    }
-
-    a.btn.btn-default,
-    button.btn.btn-default {
-        color: $primary-50;
-        // background-color: $primary-300;
-        border: 1px solid $primary-50;
-
-        &:hover {
-            background-color: $primary-50;
-            color: $primary-500;
-
-        }
-    }
-
-    .about.collapsed-info .details {
-        border-bottom: 1px solid $primary-300;
-    }
-
-    .new-user-wrapper .user-navigation {
-        border-bottom: 1px solid $primary-300;
-    }
-
-    .user-content {
-        .stats-section {
-            .value {
-                color: $satellite-300;
-
-            }
-
-            .label {
-                color: $satellite-600;
-            }
-        }
-
-        .top-section {
-            .topic-info {
-                color: $satellite-400;
-            }
-
-            a {
-                color: $primary-50;
-            }
-
-            .top-sub-section li {
-                border-left: 1px solid $primary-300;
-            }
-        }
-    }
-
-    .badge-group-list {
-        .badge-card {
-            background-color: $primary-500;
-            border: 1px solid $primary-300;
-            border-radius: $corner-md;
-
-            h3 a.badge-link {
-                color: $satellite-400;
-            }
-
-            .badge-summary {
-                a {
-                    color: $primary-50;
-                }
-
-                color: $satellite-400;
-            }
-        }
-    }
-
-    .about .secondary {
-
-        dd,
-        dd span {
-            color: $primary-50;
-        }
-    }
-
-    .user-stream {
-        .user-stream-item {
-            border-bottom: 1px solid $primary-300;
-
-            .user-stream-item__details {
-                .stream-topic-title a {
-                    color: $satellite-400;
-
-                }
-            }
-
-            p.excerpt {
-                color: $satellite-600;
-            }
-        }
-
-        .relative-date {
-            color: $primary-100;
-        }
-    }
-
-    .empty-state {
+      .btn.no-text {
         color: $satellite-600;
+      }
     }
 
-    .user-notifications-list {
-        li.notification {
-            border-bottom: 1px solid $primary-200;
+    textarea {
+      color: $satellite-400;
+    }
+  }
 
-            a {
-                color: $satellite-400;
+  a.btn.btn-default,
+  button.btn.btn-default {
+    color: $primary-50;
+    // background-color: $primary-300;
+    border: 1px solid $primary-50;
 
-                &:visited {
-                    color: $satellite-600;
-                }
-            }
-        }
+    &:hover {
+      background-color: $primary-50;
+      color: $primary-500;
+    }
+  }
 
-        .item-label {
-            color: $primary-100;
-            font-weight: 500;
-        }
+  .about.collapsed-info .details {
+    border-bottom: 1px solid $primary-300;
+  }
+
+  .new-user-wrapper .user-navigation {
+    border-bottom: 1px solid $primary-300;
+  }
+
+  .user-content {
+    .stats-section {
+      .value {
+        color: $satellite-300;
+      }
+
+      .label {
+        color: $satellite-600;
+      }
     }
 
-    .user-navigation.user-navigation-secondary {
-        .navigation-controls .btn {
-            border: none;
-            border-radius: 0;
-        }
-    }
-
-    .username-preference__current-username {
+    .top-section {
+      .topic-info {
         color: $satellite-400;
+      }
+
+      a {
+        color: $primary-50;
+      }
+
+      .top-sub-section li {
+        border-left: 1px solid $primary-300;
+      }
     }
+  }
 
-    .control-label {
-        color: $satellite-500;
-    }
+  .badge-group-list {
+    .badge-card {
+      background-color: $primary-500;
+      border: 1px solid $primary-300;
+      border-radius: $corner-md;
 
-    .d-editor-container {
-        background-color: $primary-600;
-        border: 1px solid $primary-200;
+      h3 a.badge-link {
+        color: $satellite-400;
+      }
 
-        .d-editor-button-bar {
-            border-bottom: 1px solid $primary-200;
-
+      .badge-summary {
+        a {
+          color: $primary-50;
         }
 
-        .btn {
-            border-radius: 0;
-        }
+        color: $satellite-400;
+      }
+    }
+  }
 
-        .d-editor-input {
-            color: $satellite-400;
-        }
+  .about .secondary {
+    dd,
+    dd span {
+      color: $primary-50;
+    }
+  }
 
-        .d-editor-preview-wrapper {
-            border-top: 1px solid $primary-200;
+  .user-stream {
+    .user-stream-item {
+      border-bottom: 1px solid $primary-300;
+
+      .user-stream-item__details {
+        .stream-topic-title a {
+          color: $satellite-400;
         }
+      }
+
+      p.excerpt {
+        color: $satellite-600;
+      }
     }
 
-    .uploaded-image-preview {
-        background: $primary-300 center;
+    .relative-date {
+      color: $primary-100;
     }
+  }
+
+  .empty-state {
+    color: $satellite-600;
+  }
+
+  .user-notifications-list {
+    li.notification {
+      border-bottom: 1px solid $primary-200;
+
+      a {
+        color: $satellite-400;
+
+        &:visited {
+          color: $satellite-600;
+        }
+      }
+    }
+
+    .item-label {
+      color: $primary-100;
+      font-weight: 500;
+    }
+  }
+
+  .user-navigation.user-navigation-secondary {
+    .navigation-controls .btn {
+      border: none;
+      border-radius: 0;
+    }
+  }
+
+  .username-preference__current-username {
+    color: $satellite-400;
+  }
+
+  .control-label {
+    color: $satellite-500;
+  }
+
+  .d-editor-container {
+    background-color: $primary-600;
+    border: 1px solid $primary-200;
+
+    .d-editor-button-bar {
+      border-bottom: 1px solid $primary-200;
+    }
+
+    .btn {
+      border-radius: 0;
+    }
+
+    .d-editor-input {
+      color: $satellite-400;
+    }
+
+    .d-editor-preview-wrapper {
+      border-top: 1px solid $primary-200;
+    }
+  }
+
+  .uploaded-image-preview {
+    background: $primary-300 center;
+  }
 }
 
 .user-card {
-    color: $satellite-400;
-    padding: 10px;
+  color: $satellite-400;
+  padding: 10px;
 
-    .user-field-name,
-    .user-field-value {
-        color: $satellite-600;
+  .user-field-name,
+  .user-field-value {
+    color: $satellite-600;
+  }
+
+  .location-and-website {
+    color: $primary-100;
+
+    a {
+      color: $primary-100;
     }
 
-    .location-and-website {
-        color: $primary-100;
+    .location span,
+    .user-card .location-and-website .website-name a {
+      color: $primary-100;
+    }
+  }
 
-        a {
-            color: $primary-100;
-        }
-
-        .location span,
-        .user-card .location-and-website .website-name a {
-            color: $primary-100;
-        }
+  .card-content {
+    .names__primary {
+      a,
+      .d-icon {
+        color: $satellite-400;
+      }
     }
 
-    .card-content {
+    .names__secondary {
+      color: $satellite-600;
+    }
+  }
 
-        .names__primary {
-
-            a,
-            .d-icon {
-                color: $satellite-400;
-            }
-
-        }
-
-        .names__secondary {
-            color: $satellite-600;
-        }
+  .metadata {
+    .desc {
+      color: $satellite-400;
     }
 
-    .metadata {
-        .desc {
-            color: $satellite-400;
+    color: $satellite-600;
+  }
 
-        }
+  .badge-section {
+    .user-card-badge-link .user-badge {
+      color: $satellite-400;
+      border-radius: $corner-md;
+      border: 1px solid $primary-300;
 
-        color: $satellite-600;
+      &:hover {
+        background-color: $primary-400;
+      }
     }
 
-    .badge-section {
-        .user-card-badge-link .user-badge {
-            color: $satellite-400;
-            border-radius: $corner-md;
-            border: 1px solid $primary-300;
+    .more-user-badges a {
+      color: $primary-50;
 
-            &:hover {
-                background-color: $primary-400;
-            }
-        }
-
-        .more-user-badges a {
-            color: $primary-50;
-
-            &:hover {
-                color: $primary-200;
-            }
-        }
+      &:hover {
+        color: $primary-200;
+      }
     }
+  }
 }

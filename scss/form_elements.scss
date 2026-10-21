@@ -1,76 +1,75 @@
 label {
-    color: $satellite-700;
+  color: $satellite-700;
 }
 
 input {
+  color: $satellite-600;
+
+  &[type="text"] {
+    border: 1px solid $primary-200;
+    outline: none;
+    border-radius: 0;
+
+    &:focus {
+      border: 1px solid $primary-50;
+    }
+
+    &:not(.hex-input) {
+      color: $satellite-600;
+    }
+  }
+
+  &.hex-input {
+    border: 1px solid $primary-200;
     color: $satellite-600;
-
-    &[type=text] {
-        border: 1px solid $primary-200;
-        outline: none;
-        border-radius: 0;
-
-        &:focus {
-            border: 1px solid $primary-50;
-        }
-
-        &:not(.hex-input) {
-            color: $satellite-600;
-        }
-    }
-
-    &.hex-input {
-        border: 1px solid $primary-200;
-        color: $satellite-600;
-    }
+  }
 }
 
 .color-picker {
-    .add-on {
-        border: 1px solid $primary-200;
-        border-right: none;
-        border-top-left-radius: $corner-md;
-        border-bottom-left-radius: $corner-md;
-    }
+  .add-on {
+    border: 1px solid $primary-200;
+    border-right: none;
+    border-top-left-radius: $corner-md;
+    border-bottom-left-radius: $corner-md;
+  }
 }
 
 .form-kit__container-optional {
-    color: $satellite-600;
+  color: $satellite-600;
 }
 
 .form-kit__control-menu {
-    background: $primary-600;
-    border: 1px solid $primary-100;
+  background: $primary-600;
+  border: 1px solid $primary-100;
 }
 
 .form-kit__control-select {
-    background: $primary-600;
-    border: 1px solid $primary-100;
-    border-radius: $corner-xl;
+  background: $primary-600;
+  border: 1px solid $primary-100;
+  border-radius: $corner-xl;
 }
 
 select[disabled] {
-    color: $satellite-600;
-    border-color: $primary-300;
-
+  color: $satellite-600;
+  border-color: $primary-300;
 }
 
 .select-kit.multi-select .multi-select-header {
-    background: $primary-600;
-    border-color: $primary-100;
-    border-radius: $corner-xl;
-
+  background: $primary-600;
+  border-color: $primary-100;
+  border-radius: $corner-xl;
 }
 
-.select-kit.dropdown-select-box.notifications-filter .notifications-filter-header {
-    border-color: $primary-200;
-    padding: .4rem .8rem;
+.select-kit.dropdown-select-box.notifications-filter
+  .notifications-filter-header {
+  border-color: $primary-200;
+  padding: 0.4rem 0.8rem;
 
-    .filter-text {
-        color: $satellite-600;
-    }
+  .filter-text {
+    color: $satellite-600;
+  }
 
-    .d-icon {
-        color: $satellite-700;
-    }
+  .d-icon {
+    color: $satellite-700;
+  }
 }

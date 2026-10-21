@@ -21,21 +21,21 @@
 @import "message_page";
 @import "events_calendar";
 @import "tables";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @font-face {
-    font-family: "Aeonik-Bold";
-    src: url($aeonik-bold) format('woff2');
+  font-family: "Aeonik-Bold";
+  src: url($aeonik-bold) format("woff2");
 }
 
 @font-face {
-    font-family: "Aeonik-Medium";
-    src: url($aeonik-medium) format('woff2');
+  font-family: "Aeonik-Medium";
+  src: url($aeonik-medium) format("woff2");
 }
 
 @font-face {
-    font-family: "Aeonik-Regular";
-    src: url($aeonik-regular) format('woff2');
+  font-family: "Aeonik-Regular";
+  src: url($aeonik-regular) format("woff2");
 }
 
 h1,
@@ -44,87 +44,87 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Aeonik-Bold";
+  font-family: "Aeonik-Bold";
 }
 
 body {
-    background-color: $nebula;
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
-    color: $text-color;
+  background-color: $nebula;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  color: $text-color;
 }
 
 a {
-    color: $primary-50;
+  color: $primary-50;
 
-    &:visited {
-        color: $primary-200;
-    }
+  &:visited {
+    color: $primary-200;
+  }
 }
 
 blockquote {
-    background-color: $nebula;
-    border-left: 4px solid $satellite-700;
+  background-color: $nebula;
+  border-left: 4px solid $satellite-700;
 }
 
 table th {
-    color: $text-color;
+  color: $text-color;
 }
 
 .nav a {
-    color: $text-color;
+  color: $text-color;
 }
 
 #main-outlet-wrapper {
-    margin: 0;
+  margin: 0;
 }
 
 body:not(.ios-safari-composer-hacks) #reply-control.open,
 .open .grippie {
-    border-radius: $corner-md $corner-md 0 0;
-    color: $primary-50;
+  border-radius: $corner-md $corner-md 0 0;
+  color: $primary-50;
 
-    &:before {
-        border-top: 3px double $primary-200;
-    }
+  &:before {
+    border-top: 3px double $primary-200;
+  }
 }
 
 body.has-sidebar-page .wrap {
-    margin: 0;
-    max-width: 100%;
+  margin: 0;
+  max-width: 100%;
 }
 
 #main-outlet,
 .user-main,
 #banner-content {
-    color: $text-color;
+  color: $text-color;
 }
 
 .user-main,
 .alert.alert-info,
 .post-notice {
-    background-color: $nebula;
-    border-radius: $corner-md;
+  background-color: $nebula;
+  border-radius: $corner-md;
 }
 
 #banner button {
-    color: $primary-200;
+  color: $primary-200;
 }
 
 .settings .setting .desc {
-    color: $satellite-600;
+  color: $satellite-600;
 }
 
 .powered-by-discourse {
-    display: none;
+  display: none;
 }
 
 .alert.alert-info,
 .post-notice {
-    background-color: $primary-300;
-    color: $satellite-300;
+  background-color: $primary-300;
+  color: $satellite-300;
 }
 
 .content-list ul li {
-    border-bottom: 1px solid $primary-300;
+  border-bottom: 1px solid $primary-300;
 }
