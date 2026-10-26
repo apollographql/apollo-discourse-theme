@@ -1,12 +1,12 @@
 .show-badge {
   h1 a {
-    color: $primary-50;
+    color: $nebula-50;
   }
 }
 
 .badge-card {
-  background-color: $primary-500;
-  border: 1px solid $primary-300;
+  background-color: $nebula-500;
+  border: 1px solid $nebula-300;
   border-radius: $corner-md;
 
   .badge-info h3 {
@@ -20,30 +20,30 @@
 
     .badge-summary {
       a {
-        color: $primary-50;
+        color: $nebula-50;
       }
 
       color: $satellite-400;
     }
 
     .badge-granted {
-      color: $primary-100;
+      color: $nebula-100;
     }
   }
 }
 
 .badges .admin-container {
   .content-list .admin-badge-list {
-    border: 1px solid $primary-300;
+    border: 1px solid $nebula-300;
   }
 }
 
 .admin-badges .current-badge-header svg.d-icon {
-  color: $primary-50 !important;
+  color: $nebula-50 !important;
 }
 
 .user-badge {
-  color: $primary-50;
+  color: $nebula-50;
 }
 
 .readonly-field {

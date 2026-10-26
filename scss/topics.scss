@@ -1,7 +1,7 @@
 // topic list is both in categories and topics
 .topic-list {
   thead {
-    border-bottom: 4px solid $primary-300;
+    border-bottom: 4px solid $nebula-300;
     font-family: "Aeonik-Regular";
   }
 
@@ -10,7 +10,7 @@
   }
 
   tr {
-    border-bottom: 1px solid $primary-300;
+    border-bottom: 1px solid $nebula-300;
   }
 
   th {
@@ -18,10 +18,10 @@
   }
 
   .topic-list-item-separator .topic-list-data {
-    border-top: 1px solid $primary-300;
+    border-top: 1px solid $nebula-300;
 
     span {
-      color: $primary-200;
+      color: $nebula-200;
     }
   }
 
@@ -36,10 +36,10 @@
     }
 
     // .link-bottom-line .discourse-tag {
-    //     color: $primary-100;
+    //     color: $nebula-100;
     //     padding: 0px 4px;
     //     border-radius: 3px;
-    //     background-color: $primary-400;
+    //     background-color: $nebula-400;
     // }
   }
 }
@@ -52,7 +52,7 @@
   color: $satellite-500 !important;
   padding: 0px 4px !important;
   border-radius: 3px !important;
-  background-color: $primary-300 !important;
+  background-color: $nebula-300 !important;
   margin-right: 2px;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .topic-body {
-  border-top: 1px solid $primary;
+  border-top: 1px solid $nebula-300;
 
   .post-controls .extra-buttons .accepted {
     color: $aurora;
@@ -70,7 +70,7 @@
   .cooked details,
   details .d-editor-preview,
   details.details__boxed {
-    border: 1px solid $primary;
+    border: 1px solid $nebula-300;
     color: $text-color;
     border-radius: $corner-sm;
   }
@@ -81,11 +81,11 @@
 }
 
 .first.new-user:not(.staff) a {
-  color: $primary-100;
+  color: $nebula-100;
 }
 
 .topic-map.--op {
-  border-top: 1px solid $primary;
+  border-top: 1px solid $nebula-300;
 }
 
 .loading-container {
@@ -99,14 +99,14 @@
 nav.post-controls button.btn-icon,
 nav.post-controls button.widget-button {
   svg {
-    color: $primary-100;
+    color: $nebula-100;
   }
 
   &.reply {
-    color: $primary-100;
+    color: $nebula-100;
 
     .d-icon {
-      color: $primary-100;
+      color: $nebula-100;
     }
   }
 }
@@ -115,14 +115,14 @@ nav.post-controls button.widget-button {
   button.btn.btn-icon,
   button.btn.btn-icon-text {
     &:not(.btn-primary) {
-      background-color: $primary-300;
+      background-color: $nebula-300;
     }
   }
 }
 
 .latest-topic-list-item {
   .topic-stats a {
-    color: $primary-100;
+    color: $nebula-100;
   }
 }
 
@@ -137,11 +137,11 @@ tr.last-visit + tr.topic-list-item-separator {
 }
 
 .post-notice.old {
-  color: $primary-200;
+  color: $nebula-200;
 }
 
 .topic-map__stat-label {
-  color: $primary-200 !important;
+  color: $nebula-200 !important;
 }
 
 .small-action .small-action-desc {
@@ -155,14 +155,14 @@ tr.last-visit + tr.topic-list-item-separator {
 }
 
 .aside.quote .title {
-  background-color: $primary-400;
+  background-color: $nebula-400;
 }
 
 nav.post-controls .show-replies {
-  color: $primary-200 !important;
+  color: $nebula-200 !important;
 
   .d-icon {
-    color: $primary-200 !important;
+    color: $nebula-200 !important;
   }
 }
 
@@ -172,6 +172,6 @@ nav.post-controls .show-replies {
 
 #topic-title {
   .title-wrapper .topic-statuses .d-icon {
-    color: $primary-100;
+    color: $nebula-100;
   }
 }

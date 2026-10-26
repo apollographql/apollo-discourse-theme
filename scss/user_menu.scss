@@ -1,15 +1,15 @@
 .user-menu.menu-panel.drop-down {
   border-bottom-left-radius: $corner-md;
   border-bottom-right-radius: $corner-md;
-  border-left: 1px solid $primary-300;
-  border-right: 1px solid $primary-300;
-  border-bottom: 1px solid $primary-300;
+  border-left: 1px solid $nebula-300;
+  border-right: 1px solid $nebula-300;
+  border-bottom: 1px solid $nebula-300;
   //top: ;
   margin-top: 9px;
 
   .panel-body-contents {
     .tabs-list a svg {
-      color: $primary-200;
+      color: $nebula-200;
     }
 
     .quick-access-panel {
@@ -19,7 +19,7 @@
         color: $satellite-600;
 
         svg.d-icon.svg-icon {
-          color: $primary-100;
+          color: $nebula-100;
         }
       }
 
@@ -31,15 +31,15 @@
         color: $satellite-400;
 
         svg {
-          color: $primary-50;
+          color: $nebula-50;
         }
       }
 
       .notification.unread {
-        background-color: $primary-300;
+        background-color: $nebula-300;
 
         &:hover {
-          background-color: $primary-200;
+          background-color: $nebula-200;
         }
       }
     }
@@ -47,16 +47,16 @@
 
   .panel-body-bottom {
     .btn {
-      background-color: $primary-100;
+      background-color: $nebula-100;
 
       &:hover {
-        background-color: $primary-300;
+        background-color: $nebula-300;
       }
 
-      color: $primary-600;
+      color: $nebula-600;
 
       svg {
-        color: $primary-600;
+        color: $nebula-600;
       }
     }
   }

@@ -1,32 +1,32 @@
 //.main-chat-outlet {
 
 .c-header .c-heading {
-  color: $primary-100 !important;
+  color: $nebula-100 !important;
 }
 
 .has-full-page-chat .c-header .back-to-forum {
-  color: $primary-100 !important;
+  color: $nebula-100 !important;
 
   svg.d-icon {
-    color: $primary-100 !important;
+    color: $nebula-100 !important;
   }
 }
 
 .chat-channel .all-loaded-message {
-  color: $primary-100;
+  color: $nebula-100;
 }
 
 .chat-composer-dropdown__trigger-btn .d-icon {
-  color: $primary-100 !important;
+  color: $nebula-100 !important;
 }
 
 .chat-composer-button .d-icon {
-  color: $primary-100 !important;
+  color: $nebula-100 !important;
 }
 
 .chat-notices {
   .chat-retention-reminder {
-    color: $primary-50;
+    color: $nebula-50;
   }
 }
 
@@ -35,7 +35,7 @@
 }
 
 .all-loaded-message {
-  color: $primary-200;
+  color: $nebula-200;
 }
 
 .chat-message-separator-date
@@ -50,11 +50,11 @@
 
 .chat-message {
   svg {
-    color: $primary-200;
+    color: $nebula-200;
   }
 
   &:hover {
-    background-color: $primary-300;
+    background-color: $nebula-300;
   }
 
   .discourse-local-date {
@@ -66,13 +66,13 @@
   }
 
   .chat-message-reaction.reacted {
-    background-color: $primary-600;
+    background-color: $nebula-600;
   }
 }
 
 .chat-composer__inner-container {
-  background-color: $primary-600;
-  border: 1px solid $primary-300;
+  background-color: $nebula-600;
+  border: 1px solid $nebula-300;
   border-radius: $corner-md;
   color: $satellite-400;
 
@@ -82,17 +82,17 @@
 
   button {
     svg.d-icon {
-      color: $primary-200;
+      color: $nebula-200;
 
       &:hover {
-        background-color: $primary-50;
-        color: $primary-500;
+        background-color: $nebula-50;
+        color: $nebula-500;
       }
     }
 
     &:hover {
-      background-color: $primary-50;
-      color: $primary-500;
+      background-color: $nebula-50;
+      color: $nebula-500;
     }
   }
 }
@@ -104,13 +104,13 @@
   button.chat-message-reaction,
   details {
     &:hover {
-      color: $primary-500 !important;
-      background-color: $primary-300;
+      color: $nebula-500 !important;
+      background-color: $nebula-300;
     }
   }
 
   .chat-message-reaction.reacted {
-    background-color: $primary-600;
+    background-color: $nebula-600;
   }
 
   .bookmark-btn,
@@ -118,7 +118,7 @@
   .react-btn,
   .more-buttons {
     .d-icon {
-      color: $primary-100 !important;
+      color: $nebula-100 !important;
     }
   }
 
@@ -129,7 +129,7 @@
 
 #d-menu-portals {
   .fk-d-menu__inner-content {
-    border: 1px solid $primary-300;
+    border: 1px solid $nebula-300;
   }
 
   .chat-composer-dropdown__item {
@@ -137,13 +137,13 @@
       border-radius: 0px;
 
       &:hover {
-        background-color: $primary-300;
+        background-color: $nebula-300;
         color: $satellite-300;
       }
     }
 
     svg {
-      color: $primary-100;
+      color: $nebula-100;
     }
   }
 }
@@ -156,30 +156,30 @@
   button,
   .pika-prev,
   .pika-next {
-    color: $primary-100;
+    color: $nebula-100;
 
     &:hover {
-      background-color: $primary-50;
-      color: $primary-500;
+      background-color: $nebula-50;
+      color: $nebula-500;
     }
   }
 
   .calendar-date-time-input .time-pickers {
     color: $satellite-400;
-    border-top: 1px solid $primary-300;
+    border-top: 1px solid $nebula-300;
 
     svg {
-      color: $primary-100;
+      color: $nebula-100;
     }
 
     input {
-      border-color: $primary-300;
+      border-color: $nebula-300;
     }
   }
 
   input.time-picker {
     color: $satellite-400;
-    border-color: $primary-300;
+    border-color: $nebula-300;
   }
 }
 
@@ -200,32 +200,32 @@
 
 .d-modal__footer {
   button {
-    color: $primary-100;
-    background-color: $primary-600;
+    color: $nebula-100;
+    background-color: $nebula-600;
 
     &.btn-primary {
-      background-color: $primary-100;
-      color: $primary-600;
+      background-color: $nebula-100;
+      color: $nebula-600;
     }
   }
 }
 
 .c-navbar__actions .d-icon {
-  color: $primary-100;
+  color: $nebula-100;
 }
 
 .chat-drawer {
-  box-shadow: 0px 0px 15px 2px $primary-600;
+  box-shadow: 0px 0px 15px 2px $nebula-600;
 
   .chat-drawer-container {
-    //background-color: $primary-600;
+    //background-color: $nebula-600;
 
     .c-navbar-container {
-      background-color: $primary-400;
-      border-bottom: 1px solid $primary-300;
+      background-color: $nebula-400;
+      border-bottom: 1px solid $nebula-300;
     }
 
-    border: 1px solid $primary-300;
+    border: 1px solid $nebula-300;
     border-top-left-radius: $corner-md;
     border-top-right-radius: $corner-md;
     color: $satellite-400;
@@ -235,13 +235,13 @@
     }
 
     .chat-composer__wrapper {
-      border-top: 1px solid $primary-300;
-      // background-color: $primary-00;
+      border-top: 1px solid $nebula-300;
+      // background-color: $nebula-00;
     }
 
     .chat-scroll-to-bottom__button.visible {
-      background-color: $primary-100;
-      color: $primary-600;
+      background-color: $nebula-100;
+      color: $nebula-600;
       opacity: 0.8;
     }
   }
@@ -250,16 +250,16 @@
     color: $satellite-500;
 
     button.btn-flat .d-icon {
-      color: $primary-100;
+      color: $nebula-100;
     }
   }
 
   .chat-channel-row,
   .chat-channel-row:not(:last-of-type) {
-    border-bottom: 1px solid $primary-400 !important;
+    border-bottom: 1px solid $nebula-400 !important;
 
     &:hover {
-      background-color: $primary-200;
+      background-color: $nebula-200;
     }
   }
 
@@ -272,7 +272,7 @@
     &.--active {
       .d-icon,
       .d-button-label {
-        color: $primary-100;
+        color: $nebula-100;
       }
     }
   }
@@ -280,11 +280,11 @@
 
 .full-page-chat .c-navbar-container {
   min-height: 45px;
-  background-color: $primary-500;
-  border-bottom: 1px solid $primary-300;
+  background-color: $nebula-500;
+  border-bottom: 1px solid $nebula-300;
   z-index: 1;
 }
 
 .chat-scroll-to-bottom__arrow {
-  background-color: $primary-200;
+  background-color: $nebula-200;
 }

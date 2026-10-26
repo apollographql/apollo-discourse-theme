@@ -1,32 +1,32 @@
 #upcoming-events-calendar.fc-unthemed {
   td {
-    border-color: $primary-300;
+    border-color: $nebula-300;
   }
 
   .fc-bg td.fc-today {
-    background-color: $primary-600;
+    background-color: $nebula-600;
   }
 
   .fc-button {
-    color: $primary-50;
+    color: $nebula-50;
 
     &:hover {
-      background: $primary-600;
-      color: $primary-50;
+      background: $nebula-600;
+      color: $nebula-50;
     }
   }
 }
 
 #event-popover {
-  background-color: $primary-300;
+  background-color: $nebula-300;
 }
 
 .discourse-post-event {
   .event-info .status-and-creators {
-    color: $primary-100;
+    color: $nebula-100;
 
     .username {
-      color: $primary-50;
+      color: $nebula-50;
     }
   }
 
@@ -43,5 +43,5 @@
 }
 
 .event-dates .discourse-local-date.cooked-date {
-  color: $primary-100;
+  color: $nebula-100;
 }

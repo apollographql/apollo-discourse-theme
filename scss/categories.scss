@@ -1,7 +1,7 @@
 div.edit-category {
   .edit-category-title-bar {
     background-color: $nebula;
-    border-bottom: 1px solid $primary-300;
+    border-bottom: 1px solid $nebula-300;
   }
 }
 
@@ -19,11 +19,11 @@ div.edit-category {
 
 .categories-and-latest {
   tr {
-    border-bottom: 1px solid $primary-300;
+    border-bottom: 1px solid $nebula-300;
   }
 
   .table-heading {
-    border-bottom: 3px solid $primary-300;
+    border-bottom: 3px solid $nebula-300;
   }
 }
 
@@ -33,7 +33,7 @@ div.edit-category {
     font-size: 1.2rem;
 
     tr {
-      border-bottom: 3px solid $primary-300;
+      border-bottom: 3px solid $nebula-300;
     }
 
     th {
@@ -80,7 +80,7 @@ div.edit-category {
   }
 
   .latest-topic-list-item {
-    border-bottom: 1px solid $primary-300;
+    border-bottom: 1px solid $nebula-300;
 
     .top-row {
       a.title {
@@ -109,5 +109,5 @@ div.edit-category {
 }
 
 .nav-stacked a.active {
-  color: $primary-50;
+  color: $nebula-50;
 }
